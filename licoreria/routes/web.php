@@ -15,4 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/hola', 'TestController@holaMundo');
+Route::get('catalogs','CatalogController@lisAll');
