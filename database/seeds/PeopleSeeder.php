@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\client;
+use App\person;
 
-class ClientsSeeder extends Seeder
+class PeopleSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,14 +12,15 @@ class ClientsSeeder extends Seeder
      */
     public $timestamps = false;
     public function run(){
-        DB::table('clients')->delete();
+        DB::table('people')->delete();
         for ($i=0; $i<10; $i++) {
-            client::create([
+            person::create([
                 'nombre' => 'nombre '.$i,
                 'apellido' => 'apellido  '.$i,
-                'nit' => 12345,
                 'telefono' => 123123,
+                'direccion' => 'achumani '.$i,
                 'correo' => 'ejemplo@gmail.com  '.$i
+
 
             ]);
         }
