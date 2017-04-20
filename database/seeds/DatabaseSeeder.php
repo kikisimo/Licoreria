@@ -24,6 +24,7 @@ class DatabaseSeeder extends Seeder
         $this->call(ProvidersSeeder::class);
         $this->call(CategoriesSeeder::class);
         $this->call(RolesSeeder::class);
+        $this->call(BillissuesSeeders::class);
 //  no se olviden de compose dump-autoload y luego php artisan db:seed
     }
 }
