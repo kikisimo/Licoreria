@@ -3,8 +3,8 @@
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
-
-class CreateTest1sTable extends Migration
+protected $timestamps = true;
+class CreateCcsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateTest1sTable extends Migration
      */
     public function up()
     {
-        Schema::create('test1s', function (Blueprint $table) {
+        Schema::create('ccs', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('prueba');
-            $table->string('prueba2');
+            $table->string('nombre');
+            $table->string('description');
             $table->timestamps();
         });
     }
@@ -28,6 +28,6 @@ class CreateTest1sTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('test1s');
+        Schema::dropIfExists('ccs');
     }
 }
