@@ -2,92 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40275a7f-3a91-41db-b61a-45edf2992c8b" name="Default" comment="Solucionando problemas">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/.env.example" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/.gitattributes" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/Catalog.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/Console/Kernel.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/Exceptions/Handler.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/Http/Controllers/Auth/ForgotPasswordController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/Http/Controllers/Auth/LoginController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/Http/Controllers/Auth/RegisterController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/Http/Controllers/Auth/ResetPasswordController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/Http/Controllers/CatalogController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/Http/Controllers/Controller.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/Http/Kernel.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/Http/Middleware/EncryptCookies.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/Http/Middleware/RedirectIfAuthenticated.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/Http/Middleware/TrimStrings.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/Http/Middleware/VerifyCsrfToken.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/Providers/AppServiceProvider.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/Providers/AuthServiceProvider.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/Providers/BroadcastServiceProvider.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/Providers/EventServiceProvider.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/Providers/RouteServiceProvider.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/test.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app/test1.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/artisan" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/bootstrap/app.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/bootstrap/autoload.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/bootstrap/cache/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/composer.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/config/app.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/config/auth.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/config/broadcasting.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/config/cache.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/config/database.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/config/filesystems.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/config/mail.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/config/queue.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/config/services.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/config/session.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/config/view.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/database/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/database/factories/ModelFactory.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/database/migrations/2017_04_18_164625_create_tests_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/database/migrations/2017_04_18_185108_create_test1s_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/public/.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/public/css/app.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/public/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/public/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/public/js/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/public/robots.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/read" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/resources/assets/js/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/resources/assets/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/resources/assets/js/components/Example.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/resources/assets/sass/_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/resources/assets/sass/app.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/resources/lang/en/auth.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/resources/lang/en/pagination.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/resources/lang/en/passwords.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/resources/lang/en/validation.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/resources/views/welcome.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/routes/api.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/routes/channels.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/routes/console.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/routes/web.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/app/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/app/public/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/framework/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/framework/cache/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/framework/sessions/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/framework/testing/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/framework/views/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/logs/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tests/CreatesApplication.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tests/Feature/ExampleTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tests/TestCase.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/tests/Unit/ExampleTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/webpack.mix.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yarn.lock" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Http/Controllers/BillIssueController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Http/Controllers/BillPurchaseController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Http/Controllers/BillSaleController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Http/Controllers/CategoryController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Http/Controllers/ClientController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Http/Controllers/DrinktypeController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Http/Controllers/LiquorStoreController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Http/Controllers/PersonController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Http/Controllers/PrivilegeController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Http/Controllers/ProductController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Http/Controllers/ProviderController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Http/Controllers/PurchaseController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Http/Controllers/ReservationController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Http/Controllers/RoleController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Http/Controllers/SaleController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Http/Controllers/SaleProductController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Http/Controllers/SessionController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Http/Controllers/StatuController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Http/Controllers/TestController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Http/Controllers/UsuarioController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Http/Controllers/WarehouseController.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/package.json" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/composer.lock" afterPath="$PROJECT_DIR$/app/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/yarn.lock" afterPath="$PROJECT_DIR$/app/yarn.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2017_04_19_062821_create_clients_table.php" afterPath="$PROJECT_DIR$/database/migrations/2017_04_19_062821_create_clients_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2017_04_19_074345_create_sales_table.php" afterPath="$PROJECT_DIR$/database/migrations/2017_04_19_074345_create_sales_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Console/Kernel.php" afterPath="$PROJECT_DIR$/Console/Kernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Http/Controllers/Auth/ForgotPasswordController.php" afterPath="$PROJECT_DIR$/Http/Controllers/Auth/ForgotPasswordController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Http/Controllers/Auth/LoginController.php" afterPath="$PROJECT_DIR$/Http/Controllers/Auth/LoginController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Http/Controllers/Auth/RegisterController.php" afterPath="$PROJECT_DIR$/Http/Controllers/Auth/RegisterController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Http/Controllers/Auth/ResetPasswordController.php" afterPath="$PROJECT_DIR$/Http/Controllers/Auth/ResetPasswordController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Http/Controllers/CatalogController.php" afterPath="$PROJECT_DIR$/Http/Controllers/CatalogController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Http/Controllers/Controller.php" afterPath="$PROJECT_DIR$/Http/Controllers/Controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Http/Kernel.php" afterPath="$PROJECT_DIR$/Http/Kernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Http/Middleware/EncryptCookies.php" afterPath="$PROJECT_DIR$/Http/Middleware/EncryptCookies.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Http/Middleware/RedirectIfAuthenticated.php" afterPath="$PROJECT_DIR$/Http/Middleware/RedirectIfAuthenticated.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Http/Middleware/TrimStrings.php" afterPath="$PROJECT_DIR$/Http/Middleware/TrimStrings.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Http/Middleware/VerifyCsrfToken.php" afterPath="$PROJECT_DIR$/Http/Middleware/VerifyCsrfToken.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Providers/AppServiceProvider.php" afterPath="$PROJECT_DIR$/Providers/AppServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Providers/AuthServiceProvider.php" afterPath="$PROJECT_DIR$/Providers/AuthServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Providers/BroadcastServiceProvider.php" afterPath="$PROJECT_DIR$/Providers/BroadcastServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Providers/EventServiceProvider.php" afterPath="$PROJECT_DIR$/Providers/EventServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Providers/RouteServiceProvider.php" afterPath="$PROJECT_DIR$/Providers/RouteServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cc.php" afterPath="$PROJECT_DIR$/app/cc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/readme.md" afterPath="$PROJECT_DIR$/app/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2017_04_19_223850_create_ccs_table.php" afterPath="$PROJECT_DIR$/database/migrations/2017_04_19_223850_create_ccs_table.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -112,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2017_04_19_062821_create_clients_table.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2017_04_19_062821_create_clients_table.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2017_04_19_062821_create_clients_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+            <state relative-caret-position="578">
+              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -126,7 +85,7 @@
         <entry file="file://$PROJECT_DIR$/database/seeds/ccsSeeder.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -142,12 +101,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2017_04_19_223850_create_ccs_table.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="2017_04_19_223850_create_ccs_table.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/database/migrations/2017_04_19_223850_create_ccs_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-              <folding />
+            <state relative-caret-position="85">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding>
+                <element signature="e#7#45#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -170,8 +131,8 @@
         <option value="$PROJECT_DIR$/database/migrations/2017_04_19_222014_create_bbbbbs_table.php" />
         <option value="$PROJECT_DIR$/database/seeds/bbbbbsSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2017_04_19_223850_create_ccs_table.php" />
         <option value="$PROJECT_DIR$/database/seeds/ccsSeeder.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2017_04_19_223850_create_ccs_table.php" />
       </list>
     </option>
   </component>
@@ -278,6 +239,20 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Licoreria" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Licoreria" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -381,15 +356,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23267000" />
+    <option name="totallyTimeSpent" value="24373000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1929" height="1047" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20805018" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20805018" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3266385" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32657418" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5051395" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -443,6 +417,11 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Solucionando problemas" />
+    <MESSAGE value="Ejmeplos seeder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ejmeplos seeder" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -820,18 +799,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2017_04_19_223850_create_ccs_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/ccsSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -846,9 +817,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2017_04_19_062821_create_clients_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+        <state relative-caret-position="578">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2017_04_19_223850_create_ccs_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#7#45#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
