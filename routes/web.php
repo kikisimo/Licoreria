@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 
+<<<<<<< HEAD
 Route::get('products','ProductController@listAll');
 Route::get('products/create','ProductController@create');
 Route::get('products/update','ProductController@update');
@@ -24,3 +25,12 @@ Route::get('products/show','ProductController@show');
 //Auth::routes();
 
 //Route::get('/home', 'HomeController@index');
+=======
+Route::get('/home', 'HomeController@index');
+
+
+Route::get('home', [
+    'as' => 'home',
+    'uses' => 'HomeController@index'
+]);
+>>>>>>> 401f8d0a99e9091ba6f70e125e627bffcfd6ca75
