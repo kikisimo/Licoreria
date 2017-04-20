@@ -31,6 +31,10 @@ class DatabaseSeeder extends Seeder
         $this->call(PurchasesSeeder::class);
 
         $this->call(RolesSeeder::class);
+        $this->call (StatusSeeder::class);
+        $this->call(BillPurchasesSeeder::class);
+        $this->call(WareHousesSeeder::class);
+
 
 
 //  no se olviden de compose dump-autoload y luego php artisan db:seed
