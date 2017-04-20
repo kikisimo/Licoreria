@@ -16,6 +16,7 @@ class ClientsSeeder extends Seeder
             client::create([
                 'nombre' => 'nombre '.$i,
                 'apellido' => 'apellido  '.$i,
+                //'nit' => 12313,
                 'telefono' => 123123,
                 'correo' => 'ejemplo@gmail.com  '.$i
 
