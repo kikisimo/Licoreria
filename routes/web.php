@@ -19,3 +19,9 @@ Route::get('catalogs','CatalogController@lisAll');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+
+Route::get('home', [
+    'as' => 'home',
+    'uses' => 'HomeController@index'
+]);
