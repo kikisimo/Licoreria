@@ -16,11 +16,11 @@ class CreateClientsTable extends Migration
     {
         protected $primaryKey = 'ci_cliente';
         Schema::create('clients', function (Blueprint $table) {
-           // $table->float('ci_cliente');
+
             $table->increments('ci_cliente');
             $table->string('nombre');
             $table->string('apellido');
-            //$table->string('nit');
+            $table->string('nit');
             $table->float('telefono');
             $table->string('correo');
             $table->timestamps();

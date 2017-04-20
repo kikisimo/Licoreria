@@ -22,7 +22,7 @@ class CreateUsuariosTable extends Migration
 
             $table->integer('cod_privilegio')->unsigned();
             $table->foreign('cod_privilegio')->references('cod_privilegio')->on('privileges');
-            //$table->timestamps();
+            $table->timestamps();
         });
     }
 

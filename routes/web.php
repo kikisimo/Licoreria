@@ -20,8 +20,11 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
+Route::get('products','ProductController@listAll');
+Route::get('products/create','ProductController@create');
+Route::get('products/update','ProductController@update');
 
-Route::get('home', [
+/*Route::get('home', [
     'as' => 'home',
-    'uses' => 'HomeController@index'
+    'uses' => 'HomeController@index'*/
 ]);

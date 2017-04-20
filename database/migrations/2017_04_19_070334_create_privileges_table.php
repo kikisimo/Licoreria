@@ -17,7 +17,7 @@ class CreatePrivilegesTable extends Migration
             $table->increments('cod_privilegio');
             $table->string('nombre');
             $table->string('descripcion');
-//            $table->timestamps();
+           $table->timestamps();
         });
     }
 

@@ -19,7 +19,7 @@ class CreateLiquorStoresTable extends Migration
             $table->string('direccion');
             $table->float('telefono');
             $table->float('NIT')->unique();
-            //$table->timestamps();
+            $table->timestamps();
         });
     }
 
