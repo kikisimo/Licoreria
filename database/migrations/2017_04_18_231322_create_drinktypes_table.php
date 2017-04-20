@@ -17,6 +17,7 @@ class CreateDrinktypesTable extends Migration
             $table->increments('cod_TB');
             $table->string('tipo');
             $table->string('descripcion')
+             $table->timestamps();
             ;}
         });
     }

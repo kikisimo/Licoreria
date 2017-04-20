@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\DB;
 class CatalogController extends Controller
 {
     //
-public function lisAll()
+public function listAll()
     {
       echo ('hola mundo');
     }
