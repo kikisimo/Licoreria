@@ -16,3 +16,6 @@ Route::get('/', function () {
 });
 
 Route::get('catalogs','CatalogController@lisAll');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
