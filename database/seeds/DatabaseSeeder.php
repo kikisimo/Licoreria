@@ -16,13 +16,14 @@ class DatabaseSeeder extends Seeder
         //Seeder
        // $this->call(ClientsSeeder::class);
         //ejemplo
-        $this->call(ccsSeeder::class);
+       // $this->call(ccsSeeder::class);
         //seeders rafael
         $this->call(ClientsSeeder::class);
         $this->call(ReservationsSeeder::class);
         $this->call(LiquorStoresSeeder::class);
         $this->call(ProvidersSeeder::class);
         $this->call(CategoriesSeeder::class);
+        $this->call(RolesSeeder::class);
 //  no se olviden de compose dump-autoload y luego php artisan db:seed
     }
 }
