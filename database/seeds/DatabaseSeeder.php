@@ -33,6 +33,7 @@ class DatabaseSeeder extends Seeder
         $this->call(RolesSeeder::class);
         $this->call(BillissuesSeeders::class);
         $this->call(BillsaleSeeder::class);
+        $this->call(ProductSeeder::class);
 //  no se olviden de compose dump-autoload y luego php artisan db:seed
     }
 }
