@@ -22,9 +22,8 @@ class ccsSeeder extends Seeder
 
                 'description'=>'Wordpress is content management system',
 
-                'created_at'=>intlcal_get_now()
-
-
+                'created_at'=>\Carbon\Carbon::now(),
+                'updated_at'=>\Carbon\Carbon::now(),
             )
         ));
     }
