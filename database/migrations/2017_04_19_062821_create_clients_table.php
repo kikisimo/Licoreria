@@ -6,7 +6,7 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateClientsTable extends Migration
 {
-    protected $primaryKey = 'ci_cliente';
+
     /**
      * Run the migrations.
      *
