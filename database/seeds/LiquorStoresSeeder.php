@@ -9,7 +9,9 @@ class LiquorStoresSeeder extends Seeder
      *
      * @return void
      */
+
     public function run(){
+
         DB::table('liquor_stores')->delete();
 
 

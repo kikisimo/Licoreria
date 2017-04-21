@@ -18,7 +18,7 @@ class CreateBillIssuesTable extends Migration
             $table->date('fecha_emision');
             $table->integer('cod_facturaV')->unsigned();
             $table->foreign('cod_facturaV')->references('cod_facturaV')->on('bill_sales');
-            //$table->timestamps();
+            $table->timestamps();
         });
     }
 

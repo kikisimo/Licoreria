@@ -9,6 +9,7 @@ class ProvidersSeeder extends Seeder
      *
      * @return void
      */
+    public $timestamps = false;
     public function run()
     {
 
