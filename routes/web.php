@@ -30,9 +30,9 @@ Route::get('products/update','ProductController@update');
 
 /*Route::get('home', [
     'as' => 'home',
-    'uses' => 'HomeController@index'*/
+    'uses' => 'HomeController@index'
 ]);
-
+*/
 //Route::get('/home', 'HomeController@index');
 
 /*
