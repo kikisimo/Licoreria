@@ -25,8 +25,7 @@ class CreateClientsTable extends Migration
             $table->string('correo');
 
            $table->timestamps();
-=======
-            $table->timestamps();
+
 
         });
     }

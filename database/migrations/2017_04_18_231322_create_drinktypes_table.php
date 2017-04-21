@@ -20,9 +20,9 @@ class CreateDrinktypesTable extends Migration
             $table->string('descripcion');
             $table->timestamps();
 
-            $table->string('descripcion')
+            $table->string('descripcion');
              $table->timestamps();
-            ;}
+
 
         });
     }
