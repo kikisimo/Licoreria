@@ -25,7 +25,7 @@ class CreatePurchasesTable extends Migration
             $table->integer('cod_prov')->unsigned();
             $table->foreign('cod_prov')->references('cod_prov')->on('providers');
             $table->timestamps();
-//            $table->timestamps();
+
         });
     }
 

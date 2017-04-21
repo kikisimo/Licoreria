@@ -20,15 +20,15 @@ class CreateSalesTable extends Migration
             $table->string('observacion');
             $table->integer('id_usuario')->unsigned();
             $table->foreign('id_usuario')->references('id_usuario')->on('usuarios');
-// ERROR ARREGLAR: COMENTE ESTA PARTE PARA Q LOS MIGRATES FUNCIONARAN, POR ALGUNA RAZON DA ERROR :(  TRISTEZA TOTAL
+
             $table->integer('ci_cliente')->unsigned();
             $table->foreign('ci_cliente')->references('ci_cliente')->on('clients');
-// HASTA ACA.
+
             $table->integer('cod_reserva')->unsigned();
             $table->foreign('cod_reserva')->references('cod_reserva')->on('reservations');
 
             $table->timestamps();
-            //$table->timestamps();
+
         });
     }
 
