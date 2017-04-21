@@ -3,7 +3,7 @@
 
 use Illuminate\Database\Seeder;
 
-use App\category;
+use App\warehouse;
 class WareHousesSeeder extends Seeder
 {
     /**
@@ -17,7 +17,7 @@ class WareHousesSeeder extends Seeder
         DB::table('warehouses')->delete();
 
         for ($i=0; $i<10; $i++) {
-            statu::create([
+            warehouse::create([
                 'precio_unitario' => 123123,
                 'cantidad' => 43+$i,
                 'cantidad_minima' => false
@@ -27,4 +27,4 @@ class WareHousesSeeder extends Seeder
             ]);
 
     }
-}
+}}

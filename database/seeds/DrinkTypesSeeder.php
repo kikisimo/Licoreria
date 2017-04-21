@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-use App\category;
+use App\drinktype;
 class DrinkTypesSeeder extends Seeder
 {
     /**

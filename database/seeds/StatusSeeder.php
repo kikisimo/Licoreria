@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-use App\category;
+use App\status;
 class StatusSeeder extends Seeder
 {
     /**
@@ -16,7 +16,7 @@ class StatusSeeder extends Seeder
         DB::table('status')->delete();
 
         for ($i=0; $i<10; $i++) {
-            statu::create([
+            status::create([
                 'statu_cantidad' => false,
                 'statu_vencimiento' => false
 

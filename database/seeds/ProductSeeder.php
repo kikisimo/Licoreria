@@ -7,7 +7,7 @@
  */
 
 namespace database\seeds;
-
+use App\product;
 
 class ProductSeeder extends Seeder
 {
@@ -20,7 +20,7 @@ class ProductSeeder extends Seeder
     public function run(){
         DB::table('products')->delete();
         for ($i=0; $i<10; $i++) {
-            ProductSeeder::create([
+            product::create([
                 'nombre' => 'nombre '.$i,
                 'marca' => 'marca  '.$i,
                 'contenido neto' => 'contenidoNeto  '.$i,

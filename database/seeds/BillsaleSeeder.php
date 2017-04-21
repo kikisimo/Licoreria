@@ -9,7 +9,7 @@
 namespace database\seeds;
 
 
-use App\billSale;
+use App\billsale;
 
 class BillsaleSeeder extends Seeder
 {
