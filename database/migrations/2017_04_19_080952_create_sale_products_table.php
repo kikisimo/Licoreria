@@ -20,7 +20,7 @@ class CreateSaleProductsTable extends Migration
             $table->foreign('cod_venta')->references('cod_venta')->on('sales');
             $table->integer('cod_prod')->unsigned();
             $table->foreign('cod_prod')->references('cod_prod')->on('products');
-            //$table->timestamps();
+            $table->timestamps();
         });
     }
 

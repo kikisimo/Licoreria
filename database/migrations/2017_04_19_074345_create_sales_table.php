@@ -27,7 +27,7 @@ class CreateSalesTable extends Migration
             $table->integer('cod_reserva')->unsigned();
             $table->foreign('cod_reserva')->references('cod_reserva')->on('reservations');
 
-            //$table->timestamps();
+            $table->timestamps();
             //$table->timestamps();
         });
     }

@@ -17,7 +17,7 @@ class CreateRolesTable extends Migration
             $table->increments('id_rol');
             $table->string('cargo');
             $table->string('descripcion');
-            //$table->timestamps();
+            $table->timestamps();
         });
     }
 
