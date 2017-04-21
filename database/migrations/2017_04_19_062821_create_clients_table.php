@@ -14,7 +14,7 @@ class CreateClientsTable extends Migration
      */
     public function up()
     {
-        protected $primaryKey = 'ci_cliente';
+
         Schema::create('clients', function (Blueprint $table) {
            // $table->float('ci_cliente');
             $table->increments('ci_cliente');
