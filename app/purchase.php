@@ -8,7 +8,22 @@ class purchase extends Model
 {
     //
     protected $primaryKey = 'cod_com';
-    //protected $foreignKey = 'cod_prod';
-   // protected $foreignKey = 'cod_prov';
+
+    public function products()
+    {
+        return $this -> hasMany('App\product','cod_prod');
+    }
+
+
+    public function providers()
+    {
+        return $this -> hasMany('App\provider','cod_prov');
+    }
+
+    public function bill_purchases()
+    {
+
+        return $this -> belongsTo('App\billPurchase');
+    }
 
 }

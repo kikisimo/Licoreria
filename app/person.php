@@ -7,5 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 class person extends Model
 {
     protected $primaryKey = 'ci_persona';
-    protected $foreignKey = 'id_rol';
+
+    public function usuarios()
+    {
+        return $this -> belongsTo('App\usuario');
+    }
+
+    public function roles()
+    {
+        return $this -> hasMany('App\role','id_rol');
+    }
 }

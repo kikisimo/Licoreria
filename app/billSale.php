@@ -7,6 +7,20 @@ use Illuminate\Database\Eloquent\Model;
 class billSale extends Model
 {
     protected $primaryKey = 'cod_facturaV';
-    protected $foreignKey = 'cod_facturaV';
-    protected $foreignKey2 = 'cod_VP';
+
+    public function liquor_stores()
+    {
+        return $this -> hasMany('App\liquor_store','cod_lico');
+    }
+
+    public function sale_products()
+    {
+        return $this -> hasMany('App\saleProduct','cod_VP');
+    }
+
+    public function bill_issues()
+    {
+
+        return $this -> belongsTo('App\billIssue');
+    }
 }

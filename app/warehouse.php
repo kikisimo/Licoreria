@@ -8,5 +8,15 @@ class warehouse extends Model
 {
     //
     protected $primaryKey = 'cod_almacen';
-    protected $foreignKey = 'cod_prod';
+    public function products()
+    {
+
+        return $this -> hasMany('App\product','cod_prod');
+    }
+
+    public function status()
+    {
+
+        return $this -> belongsTo('App\status');
+    }
 }

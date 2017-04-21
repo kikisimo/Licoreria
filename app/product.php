@@ -7,6 +7,34 @@ use Illuminate\Database\Eloquent\Model;
 class product extends Model
 {
     protected $primaryKey = 'cod_prod';
-    protected $foreignKey = 'cot_cat';
-    protected $foreignKey2 = 'cod_TB';
+
+
+    public function categories()
+    {
+        return $this -> hasMany('App\category','cot_cat');
+    }
+
+
+    public function drinktypes()
+    {
+        return $this -> hasMany('App\drinktype','cot_TB');
+    }
+
+    public function sale_products()
+    {
+
+        return $this -> belongsTo('App\saleProduct');
+    }
+
+    public function warehouses()
+    {
+
+        return $this -> belongsTo('App\warehouse');
+    }
+
+    public function purchases()
+    {
+
+        return $this -> belongsTo('App\purchase');
+    }
 }

@@ -8,5 +8,10 @@ class billPurchase extends Model
 {
     //
     protected $primaryKey = 'cod_facturaC';
-    protected $foreignKey = 'cod_com';
+
+    public function purchases()
+    {
+        return $this -> hasMany('App\purchase','cod_com');
+    }
+
 }

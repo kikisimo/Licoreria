@@ -13,7 +13,16 @@
      <th>Categoria</th>
      <th>Tipo de Bebida</th>
  </tr>
-
+<!-- @foreach($products as $product)
+    <tr>
+        <td>{{$product->cod_prod}}</td>
+            <td>{{$product->nombre}}</td>
+            <td>{{$product->marca}}</td>
+            <td>{{$product->contenidoNeto}}</td>
+            <td>{{$product->fechaVencimiento}}</td>
+            <td>{{$product->cod_cat}}</td>
+            <td>{{$product->cod_TB}}</td>
+        </tr>//-->
 
 
 </table>
