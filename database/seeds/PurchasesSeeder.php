@@ -19,7 +19,7 @@ class PurchasesSeeder extends Seeder
                 'precio_unitario' => 123123,
 
             ]);
-            returning ("ci_cliente");
+            //returning ("ci_cliente");
         }
     }
 }

@@ -17,8 +17,8 @@ class StatusSeeder extends Seeder
 
         for ($i=0; $i<10; $i++) {
             status::create([
-                'statu_cantidad' => false,
-                'statu_vencimiento' => false
+                'status_cantidad' => false,
+                'status_vencimiento' => false
 
 
 

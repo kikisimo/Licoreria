@@ -17,8 +17,8 @@ class SessionsSeeder extends Seeder
             session::create([
                 'fecha_ent' => \Carbon\Carbon::now(),
                 'fecha_sal' => \Carbon\Carbon::now(),
-                'hora_ent' => \Carbon::now(),
-                'hora_sal' => \Carbon::now()
+                'hora_ent' => \Carbon\Carbon::now(),
+                'hora_sal' => \Carbon\Carbon::now()
 
 
             ]);

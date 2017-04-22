@@ -11,6 +11,7 @@ class CreateStatusTable extends Migration
      *
      * @return void
      */
+    protected $table = 'status';
     public function up()
     {
         Schema::create('status', function (Blueprint $table) {
