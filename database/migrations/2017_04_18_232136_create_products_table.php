@@ -19,9 +19,9 @@ class CreateProductsTable extends Migration
             $table->string('marca');
             $table->string('contenidoNeto');
             $table->date('fechaVencimiento');
-            $table->integer('cot_cat')->unsigned();
+            $table->integer('cot_cat')->nullable()->unsigned();
             $table->foreign('cot_cat')->references('cot_cat')->on('categories');
-            $table->integer('cod_TB')->unsigned();
+            $table->integer('cod_TB')->nullable()->unsigned();
             $table->foreign('cod_TB')->references('cod_TB')->on('drinktypes');
             $table->timestamps();
         });
