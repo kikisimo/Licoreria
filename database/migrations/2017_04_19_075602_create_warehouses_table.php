@@ -18,7 +18,7 @@ class CreateWarehousesTable extends Migration
             $table->float('cantidad');
             $table->float('precio_unitario');
             $table->float('cantidad_minima');
-            $table->integer('cod_prod')->unsigned();
+            $table->integer('cod_prod')->nullable()->unsigned();
             $table->foreign('cod_prod')->references('cod_prod')->on('products');
 
             $table->timestamps();

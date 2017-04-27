@@ -19,7 +19,7 @@ class CreateSessionsTable extends Migration
             $table->date('fecha_sal');
             $table->dateTime('hora_ent');
             $table->dateTime('hora_sal');
-            $table->integer('id_usuario')->unsigned();
+            $table->integer('id_usuario')->nullable()->unsigned();
             $table->foreign('id_usuario')->references('id_usuario')->on('usuarios');
             $table->timestamps();
         });

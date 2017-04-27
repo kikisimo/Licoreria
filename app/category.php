@@ -8,4 +8,10 @@ class category extends Model
 {
     protected $primaryKey = 'cot_cat';
 
+    public function products()
+    {
+
+        return $this -> hasMany('App\product');
+    }
+
 }

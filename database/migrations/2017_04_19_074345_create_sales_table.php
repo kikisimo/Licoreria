@@ -18,17 +18,17 @@ class CreateSalesTable extends Migration
             $table->date('fecha');
             $table->dateTime('hora');
             $table->string('observacion');
-            $table->integer('id_usuario')->unsigned();
+            $table->integer('id_usuario')->nullable()->unsigned();
             $table->foreign('id_usuario')->references('id_usuario')->on('usuarios');
-// ERROR ARREGLAR: COMENTE ESTA PARTE PARA Q LOS MIGRATES FUNCIONARAN, POR ALGUNA RAZON DA ERROR :(  TRISTEZA TOTAL
-            $table->integer('ci_cliente')->unsigned();
+
+            $table->integer('ci_cliente')->nullable()->unsigned();
             $table->foreign('ci_cliente')->references('ci_cliente')->on('clients');
-// HASTA ACA.
-            $table->integer('cod_reserva')->unsigned();
+
+            $table->integer('cod_reserva')->nullable()->unsigned();
             $table->foreign('cod_reserva')->references('cod_reserva')->on('reservations');
 
-            //$table->timestamps();
-            //$table->timestamps();
+            $table->timestamps();
+
         });
     }
 

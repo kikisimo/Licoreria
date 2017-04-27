@@ -10,7 +10,7 @@ class ReservationsSeeder extends Seeder
      *
      * @return void
      */
-
+    public $timestamps = false;
     public function run(){
         DB::table('reservations')->delete();
 

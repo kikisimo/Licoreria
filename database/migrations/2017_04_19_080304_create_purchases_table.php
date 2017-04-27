@@ -19,13 +19,13 @@ class CreatePurchasesTable extends Migration
             $table->float('cantidad');
             $table->float('precio_unitario');
 
-            $table->integer('cod_prod')->unsigned();
+            $table->integer('cod_prod')->nullable()->unsigned();
             $table->foreign('cod_prod')->references('cod_prod')->on('products');
 
-            $table->integer('cod_prov')->unsigned();
+            $table->integer('cod_prov')->nullable()->unsigned();
             $table->foreign('cod_prov')->references('cod_prov')->on('providers');
-            //$table->timestamps();
-//            $table->timestamps();
+            $table->timestamps();
+
         });
     }
 

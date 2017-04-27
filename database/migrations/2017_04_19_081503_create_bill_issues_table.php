@@ -16,9 +16,9 @@ class CreateBillIssuesTable extends Migration
         Schema::create('bill_issues', function (Blueprint $table) {
             $table->increments('cod_EFV');
             $table->date('fecha_emision');
-            $table->integer('cod_facturaV')->unsigned();
+            $table->integer('cod_facturaV')->nullable()->unsigned();
             $table->foreign('cod_facturaV')->references('cod_facturaV')->on('bill_sales');
-            //$table->timestamps();
+            $table->timestamps();
         });
     }
 

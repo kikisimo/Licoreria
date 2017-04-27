@@ -16,11 +16,11 @@ class CreateSaleProductsTable extends Migration
         Schema::create('sale_products', function (Blueprint $table) {
             $table->increments('cod_VP');
             $table->float('cantidad');
-            $table->integer('cod_venta')->unsigned();
+            $table->integer('cod_venta')->nullable()->unsigned();
             $table->foreign('cod_venta')->references('cod_venta')->on('sales');
-            $table->integer('cod_prod')->unsigned();
+            $table->integer('cod_prod')->nullable()->unsigned();
             $table->foreign('cod_prod')->references('cod_prod')->on('products');
-            //$table->timestamps();
+            $table->timestamps();
         });
     }
 
