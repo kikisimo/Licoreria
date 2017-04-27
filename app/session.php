@@ -11,6 +11,6 @@ class session extends Model
     public function usuarios()
     {
 
-        return $this -> hasMany('App\usuario','id_usuario');
+        return $this -> belongsTo('App\usuario','id_usuario');
     }
 }

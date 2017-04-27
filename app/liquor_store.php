@@ -11,6 +11,6 @@ class liquor_store extends Model
     public function bill_sales()
     {
 
-        return $this -> belongsTo('App\billSale');
+        return $this -> hasMany('App\billSale');
     }
 }

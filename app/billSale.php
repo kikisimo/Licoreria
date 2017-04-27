@@ -10,17 +10,17 @@ class billSale extends Model
 
     public function liquor_stores()
     {
-        return $this -> hasMany('App\liquor_store','cod_lico');
+        return $this -> belongsTo('App\liquor_store','cod_lico');
     }
 
     public function sale_products()
     {
-        return $this -> hasMany('App\saleProduct','cod_VP');
+        return $this -> belongsTo('App\saleProduct','cod_VP');
     }
 
     public function bill_issues()
     {
 
-        return $this -> belongsTo('App\billIssue');
+        return $this -> hasMany('App\billIssue');
     }
 }

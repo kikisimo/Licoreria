@@ -12,7 +12,7 @@ class status extends Model
     public function warehouses()
     {
 
-        return $this->hasMany('App\warehouse', 'cod_almacen');
+        return $this->belongsTo('App\warehouse', 'cod_almacen');
     }
 
     protected $table = 'status';

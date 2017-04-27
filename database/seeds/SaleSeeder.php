@@ -10,6 +10,7 @@ use Illuminate\Database\Seeder;
 
 
 use App\sale;
+use App\saleProduct;
 
 class SaleSeeder extends Seeder
 {
@@ -20,13 +21,32 @@ class SaleSeeder extends Seeder
      */
 
     public function run(){
+
         DB::table('sales')->delete();
+
+
         for ($i=0; $i<10; $i++) {
-            sale::create([
+
+           $sale= sale::create([
+
                 'fecha' => \Carbon\Carbon::now(),
                 'hora' => \Carbon\Carbon::now(),
                 'observacion' => 'ejemplo@gmail.com  '.$i,
+
+            ]);
+        }
+
+        DB::table('sale_products')->delete();
+        for ($i=0; $i<10; $i++) {
+            saleProduct::create([
+
+                'cantidad' => 80,
+                'cod_venta' => $sale,
             ]);
         }
     }
+
+
+
+
 }

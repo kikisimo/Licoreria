@@ -8,22 +8,29 @@ class sale extends Model
 {
     protected $primaryKey = 'cod_venta';
 
+
     public function usuarios()
     {
 
-        return $this -> hasMany('App\usuario','id_usuario');
+        return $this -> belongsTo('App\usuario','id_usuario');
     }
 
     public function clients()
     {
 
-        return $this -> hasMany('App\client','ci_cliente');
+        return $this -> belongsTo('App\client','ci_cliente');
     }
 
     public function reservations()
     {
 
-        return $this -> hasMany('App\reservation','cod_reserva');
+        return $this -> belongsTo('App\reservation','cod_reserva');
+    }
+
+    public function sale_products()
+    {
+        return $this -> hasMany('App\saleProduct');
     }
 }
+
 

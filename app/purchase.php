@@ -11,19 +11,19 @@ class purchase extends Model
 
     public function products()
     {
-        return $this -> hasMany('App\product','cod_prod');
+        return $this -> belongsTo('App\product','cod_prod');
     }
 
 
     public function providers()
     {
-        return $this -> hasMany('App\provider','cod_prov');
+        return $this -> belongsTo('App\provider','cod_prov');
     }
 
     public function bill_purchases()
     {
 
-        return $this -> belongsTo('App\billPurchase');
+        return $this -> hasMany('App\billPurchase');
     }
 
 }

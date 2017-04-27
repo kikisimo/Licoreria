@@ -11,6 +11,6 @@ class provider extends Model
     public function purchases()
     {
 
-        return $this -> belongsTo('App\purchase');
+        return $this -> hasMany('App\purchase');
     }
     }

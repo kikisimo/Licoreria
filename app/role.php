@@ -10,6 +10,6 @@ class role extends Model
 
     public function people()
     {
-        return $this -> belongsTo('App\person');
+        return $this -> hasMany('App\person');
     }
 }

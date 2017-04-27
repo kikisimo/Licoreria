@@ -10,11 +10,11 @@ class person extends Model
 
     public function usuarios()
     {
-        return $this -> belongsTo('App\usuario');
+        return $this -> hasMany('App\usuario');
     }
 
     public function roles()
     {
-        return $this -> hasMany('App\role','id_rol');
+        return $this -> belongsTo('App\role','id_rol');
     }
 }

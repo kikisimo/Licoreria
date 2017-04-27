@@ -10,17 +10,17 @@ class saleProduct extends Model
 
     public function sales()
     {
-        return $this -> hasMany('App\sale','cod_venta');
+        return $this -> belongsTo('App\sale','cod_venta');
     }
 
     public function products()
     {
-        return $this -> hasMany('App\product','cod_prod');
+        return $this -> belongsTo('App\product','cod_prod');
     }
 
     public function bill_sales()
     {
 
-        return $this -> belongsTo('App\billSale');
+        return $this -> hasMany('App\billSale');
     }
 }

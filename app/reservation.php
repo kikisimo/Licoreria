@@ -13,6 +13,6 @@ class reservation extends Model
     public function sales()
     {
 
-        return $this -> belongsTo('App\sale');
+        return $this -> hasMany('App\sale');
     }
 }

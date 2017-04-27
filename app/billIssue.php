@@ -10,6 +10,6 @@ class billIssue extends Model
 
     public function bill_sales()
     {
-        return $this -> hasMany('App\billSale','cod_facturaV');
+        return $this -> belongsTo('App\billSale','cod_facturaV');
     }
 }

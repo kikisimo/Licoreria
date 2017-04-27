@@ -11,6 +11,6 @@ class drinktype extends Model
     public function products()
     {
 
-        return $this -> belongsTo('App\product');
+        return $this -> hasMany('App\product');
     }
 }
