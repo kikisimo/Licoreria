@@ -36,14 +36,14 @@ class SaleSeeder extends Seeder
             ]);
         }
 
-        DB::table('sale_products')->delete();
+       /* DB::table('sale_products')->delete();
         for ($i=0; $i<10; $i++) {
             saleProduct::create([
 
                 'cantidad' => 80,
                 'cod_venta' => $sale,
-            ]);
-        }
+            ]);*/
+        
     }
 
 
