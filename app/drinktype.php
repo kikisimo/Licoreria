@@ -6,11 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class drinktype extends Model
 {
-    protected $primaryKey = 'cot_TB';
+    protected $primaryKey = 'cod_TB';
 
     public function products()
     {
 
-        return $this -> belongsTo('App\product');
+        return $this -> hasMany('App\product');
     }
 }

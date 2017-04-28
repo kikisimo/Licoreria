@@ -15,9 +15,9 @@ class CreateBillSalesTable extends Migration
     {
         Schema::create('bill_sales', function (Blueprint $table) {
             $table->increments('cod_facturaV');
-            $table->integer('cod_lico')->unsigned();
+            $table->integer('cod_lico')->nullable()->unsigned();
             $table->foreign('cod_lico')->references('cod_lico')->on('liquor_stores');
-            $table->integer('cod_VP')->unsigned();
+            $table->integer('cod_VP')->nullable()->unsigned();
             $table->foreign('cod_VP')->references('cod_VP')->on('sale_products');
             $table->timestamps();
         });

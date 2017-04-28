@@ -6,12 +6,11 @@
  * Time: 12:56 AM
  */
 
-namespace database\seeds;
-
+use Illuminate\Database\Seeder;
 
 use App\billIssue;
 
-class BillissuesSeeders
+class BillissuesSeeders extends Seeder
 {
     /**
      * Run the database seeds.
@@ -24,7 +23,7 @@ class BillissuesSeeders
 
         for ($i=0; $i<10; $i++) {
             billIssue::create([
-                'fecha' => \Carbon\Carbon::now()
+                'fecha_emision' => \Carbon\Carbon::now()
             ]);
         }
     }

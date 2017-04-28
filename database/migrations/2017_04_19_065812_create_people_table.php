@@ -20,7 +20,7 @@ class CreatePeopleTable extends Migration
             $table->float ('telefono');
             $table->string('direccion');
             $table->string('correo')->unique();
-            $table->integer('id_rol')->unsigned();
+            $table->integer('id_rol')->nullable()->unsigned();
             $table->foreign('id_rol')->references('id_rol')->on('roles');
             $table->timestamps();
         });

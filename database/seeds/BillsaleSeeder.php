@@ -6,7 +6,7 @@
  * Time: 3:20 AM
  */
 
-namespace database\seeds;
+use Illuminate\Database\Seeder;
 
 
 use App\billsale;
@@ -18,7 +18,7 @@ class BillsaleSeeder extends Seeder
      *
      * @return void
      */
-    public $timestamps = false;
+
     public function run()
     {
 

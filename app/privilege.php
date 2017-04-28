@@ -10,6 +10,6 @@ class privilege extends Model
 
     public function usuarios()
     {
-        return $this -> belongsTo('App\usuario');
+        return $this -> hasMany('App\usuario');
     }
 }

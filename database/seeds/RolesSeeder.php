@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\roles;
+use App\role;
 
 class RolesSeeder extends Seeder
 {
@@ -14,7 +14,7 @@ class RolesSeeder extends Seeder
     public function run(){
         DB::table('roles')->delete();
         for ($i=0; $i<10; $i++) {
-            roles::create([
+            role::create([
                 'cargo' => 'cargo '.$i,
                 'descripcion' => 'ninguna  '.$i
 

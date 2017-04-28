@@ -6,7 +6,7 @@
  * Time: 3:45 AM
  */
 
-namespace database\seeds;
+use Illuminate\Database\Seeder;
 
 
 use App\saleProduct;
@@ -18,12 +18,13 @@ class saleProductSeeder extends Seeder
      *
      * @return void
      */
-    public $timestamps = false;
+
     public function run(){
         DB::table('sale_products')->delete();
         for ($i=0; $i<10; $i++) {
             saleProduct::create([
                 'cantidad' => 80,
+
             ]);
         }
     }

@@ -11,12 +11,12 @@ class warehouse extends Model
     public function products()
     {
 
-        return $this -> hasMany('App\product','cod_prod');
+        return $this -> belongsTo('App\product','cod_prod');
     }
 
     public function status()
     {
 
-        return $this -> belongsTo('App\status');
+        return $this -> hasMany('App\status');
     }
 }

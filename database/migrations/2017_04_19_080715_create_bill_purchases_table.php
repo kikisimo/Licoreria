@@ -15,7 +15,7 @@ class CreateBillPurchasesTable extends Migration
     {
         Schema::create('bill_purchases', function (Blueprint $table) {
             $table->increments('cod_facturaC');
-            $table->integer('cod_com')->unsigned();
+            $table->integer('cod_com')->nullable()->unsigned();
             $table->foreign('cod_com')->references('cod_com')->on('purchases');
             $table->timestamps();
         });

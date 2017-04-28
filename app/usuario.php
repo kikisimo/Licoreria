@@ -12,22 +12,22 @@ class usuario extends Model
     public function people()
     {
 
-        return $this -> hasMany('App\person','ci_persona');
+        return $this -> belongsTo('App\person','ci_persona');
     }
 
     public function privileges()
     {
 
-        return $this -> hasMany('App\privilege','cod_privilegio');
+        return $this -> belongsTo('App\privilege','cod_privilegio');
     }
 
     public function sessions()
     {
-        return $this -> belongsTo('App\session');
+        return $this -> hasMany('App\session');
     }
 
     public function sales()
     {
-        return $this -> belongsTo('App\sale');
+        return $this -> hasMany('App\sale');
     }
 }

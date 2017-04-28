@@ -11,7 +11,7 @@ class billPurchase extends Model
 
     public function purchases()
     {
-        return $this -> hasMany('App\purchase','cod_com');
+        return $this -> belongsTo('App\purchase','cod_com');
     }
 
 }
