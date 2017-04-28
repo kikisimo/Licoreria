@@ -29,7 +29,7 @@ class DatabaseSeeder extends Seeder
        // $this->call(RolesSeeder::class);
         //$this->call(DrinkTypesSeeder::class);
 
-        $this->call(PrivilegesSeeder::class);
+      /*  $this->call(PrivilegesSeeder::class);
         $this->call(PurchasesSeeder::class);
         $this->call(SessionsSeeder::class);
         $this->call(RolesSeeder::class);
@@ -46,6 +46,7 @@ class DatabaseSeeder extends Seeder
         $this->call(saleProductSeeder::class);
         $this->call(sale::class);
         $this->call(product::class);
+      */
 
 //  no se olviden de compose dump-autoload y luego php artisan db:seed
     }
