@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sistema | Panel Control</title>
+    <title>Sistema Licoreria| Panel Control</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
@@ -42,11 +42,11 @@
 
       <header class="main-header">
         <!-- Logo -->
-        <a href="index2.html" class="logo">
+        <a href="#"class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini"><b>A</b>LT</span>
           <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><b>Plu</b>SIS</span>
+          <span class="logo-lg"><b>Lico</b>SIS</span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
@@ -63,14 +63,14 @@
                   <span class="label label-success">4</span>
                 </a>
                 <ul class="dropdown-menu">
-                  <li class="header">You have 4 messages</li>
+                  <li class="header">You have 3 messages</li>
                   <li>
                     <!-- inner menu: contains the actual data -->
                     <ul class="menu">
                       <li><!-- start message -->
                         <a href="#">
                           <div class="pull-left">
-                            <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                            <img src="dist/img/avatar5.png" class="img-circle" alt="User Image">
                           </div>
                           <h4>
                             Support Team
@@ -296,7 +296,7 @@
           <!-- Sidebar user panel -->
           <div class="user-panel">
             <div class="pull-left image">
-              <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+              <img src="dist/img/avatar5.png" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
               <p>Alexander Pierce</p>
@@ -320,10 +320,7 @@
               <a href="#">
                 <i class="fa fa-dashboard"></i> <span>Inicio</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
-              <ul class="treeview-menu">
-                <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-                <li><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
-              </ul>
+
             </li>
             <li class="treeview">
               <a href="#">
@@ -371,27 +368,7 @@
                 <li><a href="pages/UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>
               </ul>
             </li>
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-edit"></i> <span>Forms</span>
-                <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="pages/forms/general.html"><i class="fa fa-circle-o"></i> General Elements</a></li>
-                <li><a href="pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
-                <li><a href="pages/forms/editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
-              </ul>
-            </li>
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-table"></i> <span>Tables</span>
-                <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="pages/tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>
-                <li><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>
-              </ul>
-            </li>
+
             <li>
               <a href="pages/calendar.html">
                 <i class="fa fa-calendar"></i> <span>Calendar</span>
