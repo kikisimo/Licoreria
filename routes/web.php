@@ -50,7 +50,9 @@ Route::get('home', [
 ]);
 */
 
-
+//Rutas para CRUD usuario (crea todas las routas)
+Route::resource('users', 'UsuarioController');
+// ¡?¡?
 Auth::routes();
 Route::get('/home', 'HomeController@index');
 
