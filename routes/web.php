@@ -52,9 +52,17 @@ Route::get('home', [
 
 
 Auth::routes();
-
 Route::get('/home', 'HomeController@index');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+
+//CRUD Categories
+/*
+Route::get('categories','CategoryController@listAll');
+Route::get('categories/create','CategoryController@create');
+Route::get('categories/update','CategoryController@update');
+Route::get('categories/delete','CategoryController@delete');
+Route::get('categories/show','CategoryController@show');*/
