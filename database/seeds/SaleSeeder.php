@@ -43,7 +43,7 @@ class SaleSeeder extends Seeder
                 'cantidad' => 80,
                 'cod_venta' => $sale,
             ]);*/
-        
+
     }
 
 
