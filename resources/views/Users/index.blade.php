@@ -15,10 +15,14 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach($users as $users)
+                @foreach($users as $user)
                     <tr>
-                        <td> {{ $users->Id }}</td>
-                        <td> {{ $users->name }}</td>
+                        <td> {{ $user->ci_persona }}</td>
+                        <td> {{ $user->nombre }}</td>
+                        <td> {{ $user->apellido }}</td>
+                        <td> {{ $user->telefono }}</td>
+                        <td> {{ $user->direccion }}</td>
+                        <td> {{ $user->correo }}</td>
                         <td> ver </td>
                         <td> editar</td>
                         <td> borrar</td>
@@ -26,7 +30,6 @@
                     @endforeach
             </tbody>
         </table>
-    {!! $users->render() !!}
     </div>
     <div class="col-sm-4">
 
