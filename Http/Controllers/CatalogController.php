@@ -11,7 +11,8 @@ class CatalogController extends Controller
 
     public function listAll()
     {
-        return_view('products.listAll',['name'=>'test noobs']);
+        //echo("hola mundo");
+       // return_view('products.listAll',['name'=>'test noobs']);
     }
     public function create()
     {

@@ -14,6 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('login', function () {
+    return view('login');
+});
+Route::get('base', function () {
+    return view('base');
+});
+
+Route::get('catalogs','CatalogController@listAll');
 
 
 Route::get('products','ProductController@listAll');
