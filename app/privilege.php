@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class privilege extends Model
 {
-    protected $primaryKey = 'cod_privilegio';
+    protected $primaryKey = 'cod_privilege';
 
     public function usuarios()
     {

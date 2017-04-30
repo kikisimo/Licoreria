@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class billSale extends Model
 {
-    protected $primaryKey = 'cod_facturaV';
+    protected $primaryKey = 'cod_bill';
 
     public function liquor_stores()
     {
@@ -15,7 +15,7 @@ class billSale extends Model
 
     public function sale_products()
     {
-        return $this -> belongsTo('App\saleProduct','cod_VP');
+        return $this -> belongsTo('App\saleProduct','cod_sale_product');
     }
 
     public function bill_issues()

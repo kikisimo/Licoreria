@@ -8,7 +8,7 @@ class reservation extends Model
 {
 
 
-    protected $primaryKey = 'cod_reserva';
+    protected $primaryKey = 'cod_reservation';
 
     public function sales()
     {

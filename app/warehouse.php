@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class warehouse extends Model
 {
     //
-    protected $primaryKey = 'cod_almacen';
+    protected $primaryKey = 'cod_warehouse';
     public function products()
     {
 

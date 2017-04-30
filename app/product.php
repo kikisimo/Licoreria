@@ -11,13 +11,13 @@ class product extends Model
 
     public function categories()
     {
-        return $this -> belongsTo('App\category','cot_cat');
+        return $this -> belongsTo('App\category','cod_cat');
     }
 
 
     public function drinktypes()
     {
-        return $this -> belongsTo('App\drinktype','cot_TB');
+        return $this -> belongsTo('App\drinktype','cot_dt');
     }
 
     public function sale_products()

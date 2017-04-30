@@ -6,11 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class saleProduct extends Model
 {
-    protected $primaryKey = 'cod_VP';
+    protected $primaryKey = 'cod_sale_product';
 
     public function sales()
     {
-        return $this -> belongsTo('App\sale','cod_venta');
+        return $this -> belongsTo('App\sale','cod_sale');
     }
 
     public function products()

@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class purchase extends Model
 {
     //
-    protected $primaryKey = 'cod_com';
+    protected $primaryKey = 'cod_purchase';
 
     public function products()
     {

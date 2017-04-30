@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class category extends Model
 {
-    protected $primaryKey = 'cot_cat';
+    protected $primaryKey = 'cod_cat';
 
     public function products()
     {
