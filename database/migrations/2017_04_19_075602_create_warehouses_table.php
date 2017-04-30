@@ -14,10 +14,10 @@ class CreateWarehousesTable extends Migration
     public function up()
     {
         Schema::create('warehouses', function (Blueprint $table) {
-            $table->increments('cod_almacen');
-            $table->float('cantidad');
-            $table->float('precio_unitario');
-            $table->float('cantidad_minima');
+            $table->increments('cod_warehouse');
+            $table->integer('quantity');
+            $table->float('precy_unitary');
+            $table->integer('quantity_minimum');
             $table->integer('cod_prod')->nullable()->unsigned();
             $table->foreign('cod_prod')->references('cod_prod')->on('products');
 

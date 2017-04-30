@@ -14,18 +14,18 @@ class CreateSalesTable extends Migration
     public function up()
     {
         Schema::create('sales', function (Blueprint $table) {
-            $table->increments('cod_venta');
-            $table->date('fecha');
-            $table->dateTime('hora');
-            $table->string('observacion');
-            $table->integer('id_usuario')->nullable()->unsigned();
-            $table->foreign('id_usuario')->references('id_usuario')->on('usuarios');
+            $table->increments('cod_sale');
+            /*$table->date('fecha');
+            $table->dateTime('hora');*/
+            $table->string('observation');
+            $table->integer('id_user')->nullable()->unsigned();
+            $table->foreign('id_user')->references('id_user')->on('user');
 
-            $table->integer('ci_cliente')->nullable()->unsigned();
-            $table->foreign('ci_cliente')->references('ci_cliente')->on('clients');
+            $table->integer('ci_client')->nullable()->unsigned();
+            $table->foreign('ci_client')->references('ci_client')->on('clients');
 
-            $table->integer('cod_reserva')->nullable()->unsigned();
-            $table->foreign('cod_reserva')->references('cod_reserva')->on('reservations');
+            $table->integer('cod_reservation')->nullable()->unsigned();
+            $table->foreign('cod_reservation')->references('cod_reservation')->on('reservations');
 
             $table->timestamps();
 

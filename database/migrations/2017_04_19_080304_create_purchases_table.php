@@ -14,10 +14,10 @@ class CreatePurchasesTable extends Migration
     public function up()
     {
         Schema::create('purchases', function (Blueprint $table) {
-            $table->increments('cod_com');
-            $table->date('fecha');
-            $table->float('cantidad');
-            $table->float('precio_unitario');
+            $table->increments('cod_purchase');
+            $table->date('date');
+            $table->integer('quantyti');
+            $table->float('precy_unitary');
 
             $table->integer('cod_prod')->nullable()->unsigned();
             $table->foreign('cod_prod')->references('cod_prod')->on('products');
