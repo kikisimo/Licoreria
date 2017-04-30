@@ -20,7 +20,7 @@ class WareHousesSeeder extends Seeder
             warehouse::create([
                 'quantity' => 123123,
                 'price' => 43+$i,
-                'minumum_quantity' => false
+                'minimum_quantity' => false
 
 
 
