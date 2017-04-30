@@ -22,7 +22,7 @@ class CreateProductsTable extends Migration
             $table->integer('cod_cat')->nullable()->unsigned();
             $table->foreign('cod_cat')->references('cod_cat')->on('categories');
             $table->integer('cod_dt')->nullable()->unsigned();
-            $table->foreign('cod_dt')->references('cod_tb')->on('drinktypes');
+            $table->foreign('cod_dt')->references('cod_dt')->on('drinktypes');
             $table->timestamps();
         });
     }
