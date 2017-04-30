@@ -16,8 +16,8 @@ class CreatePurchasesTable extends Migration
         Schema::create('purchases', function (Blueprint $table) {
             $table->increments('cod_purchase');
             $table->date('date');
-            $table->integer('quantyti');
-            $table->float('precy_unitary');
+            $table->integer('quantity');
+            $table->float('price');
 
             $table->integer('cod_prod')->nullable()->unsigned();
             $table->foreign('cod_prod')->references('cod_prod')->on('products');

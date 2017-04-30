@@ -16,9 +16,9 @@ class CreateWarehousesTable extends Migration
         Schema::create('warehouses', function (Blueprint $table) {
             $table->increments('cod_warehouse');
             $table->integer('quantity');
-            $table->float('precy_unitary');
-            $table->integer('quantity_minimum');
-            $table->integer('cod_prod')->nullable()->unsigned();
+            $table->float('price');
+            $table->integer('minimum_quantity');
+            $table->integer('cod_prod') ->nullable()->unsigned();
             $table->foreign('cod_prod')->references('cod_prod')->on('products');
 
             $table->timestamps();
