@@ -17,10 +17,10 @@ class CreateStatusTable extends Migration
     {
         Schema::create('status', function (Blueprint $table) {
             $table->increments('cod_status');
-            $table->boolean('status_cantidad');
-            $table->boolean('status_vencimiento');
-            $table->integer('cod_almacen')->nullable()->unsigned();
-            $table->foreign('cod_almacen')->references('cod_almacen')->on('warehouses');
+            $table->boolean('status_quantity');
+            $table->boolean('status_expiration');
+            $table->integer('cod_warehouse')->nullable()->unsigned();
+            $table->foreign('cod_warehouse')->references('cod_warehouse')->on('warehouses');
 
             $table->timestamps();
         });
