@@ -17,7 +17,7 @@ class CreateSaleProductsTable extends Migration
             $table->increments('cod_sale_product');
             $table->float('quantity');
             $table->integer('cod_sale')->nullable()->unsigned();
-            $table->foreign('cod_sale')->references('cod_venta')->on('sales');
+            $table->foreign('cod_sale')->references('cod_sale')->on('sales');
             $table->integer('cod_prod')->nullable()->unsigned();
             $table->foreign('cod_prod')->references('cod_prod')->on('products');
             $table->timestamps();
