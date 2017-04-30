@@ -19,7 +19,7 @@ class CreateSalesTable extends Migration
             $table->dateTime('hora');*/
             $table->string('observation');
             $table->integer('id_user')->nullable()->unsigned();
-            $table->foreign('id_user')->references('id_user')->on('user');
+            $table->foreign('id_user')->references('id_user')->on('usuarios');
 
             $table->integer('ci_client')->nullable()->unsigned();
             $table->foreign('ci_client')->references('ci_client')->on('clients');
