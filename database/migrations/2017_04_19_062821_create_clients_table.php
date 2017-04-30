@@ -17,12 +17,12 @@ class CreateClientsTable extends Migration
 
         Schema::create('clients', function (Blueprint $table) {
 
-            $table->increments('ci_cliente');
-            $table->string('nombre');
-            $table->string('apellido');
+            $table->increments('ci_client');
+            $table->string('name');
+            $table->string('lastname');
             $table->string('nit');
-            $table->float('telefono');
-            $table->string('correo');
+            $table->string('phone');
+            $table->string('e_mail');
 
            $table->timestamps();
 

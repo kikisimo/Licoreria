@@ -14,10 +14,9 @@ class CreateDrinktypesTable extends Migration
     public function up()
     {
         Schema::create('drinktypes', function (Blueprint $table) {
-            $table->increments('cod_TB');
-            $table->string('tipo');
-
-            $table->string('descripcion');
+            $table->increments('cod_dt');
+            $table->string('type');
+            $table->string('description');
             $table->timestamps();
 
         });

@@ -14,12 +14,12 @@ class CreatePeopleTable extends Migration
     public function up()
     {
         Schema::create('people', function (Blueprint $table) {
-            $table->increments('ci_persona');
-            $table->string('nombre');
-            $table->string('apellido');
-            $table->float ('telefono');
-            $table->string('direccion');
-            $table->string('correo')->unique();
+            $table->increments('ci_person');
+            $table->string('name');
+            $table->string('lastname');
+            $table->string('phone');
+            $table->string('address');
+            $table->string('e_mail')->unique();
             $table->integer('id_rol')->nullable()->unsigned();
             $table->foreign('id_rol')->references('id_rol')->on('roles');
             $table->timestamps();

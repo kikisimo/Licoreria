@@ -15,14 +15,14 @@ class CreateProductsTable extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->increments('cod_prod');
-            $table->string('nombre');
-            $table->string('marca');
-            $table->string('contenidoNeto');
-            $table->date('fechaVencimiento');
-            $table->integer('cot_cat')->nullable()->unsigned();
-            $table->foreign('cot_cat')->references('cot_cat')->on('categories');
-            $table->integer('cod_TB')->nullable()->unsigned();
-            $table->foreign('cod_TB')->references('cod_TB')->on('drinktypes');
+            $table->string('name');
+            $table->string('brand');
+            $table->string('content');
+            $table->date('due_date');
+            $table->integer('cod_cat')->nullable()->unsigned();
+            $table->foreign('cod_cat')->references('cod_cat')->on('categories');
+            $table->integer('cod_dt')->nullable()->unsigned();
+            $table->foreign('cod_dt')->references('cod_tb')->on('drinktypes');
             $table->timestamps();
         });
     }

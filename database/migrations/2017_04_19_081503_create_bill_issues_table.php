@@ -14,10 +14,10 @@ class CreateBillIssuesTable extends Migration
     public function up()
     {
         Schema::create('bill_issues', function (Blueprint $table) {
-            $table->increments('cod_EFV');
-            $table->date('fecha_emision');
-            $table->integer('cod_facturaV')->nullable()->unsigned();
-            $table->foreign('cod_facturaV')->references('cod_facturaV')->on('bill_sales');
+            $table->increments('cod_bi');
+            $table->date('issue_date');
+            $table->integer('cod_bill')->nullable()->unsigned();
+            $table->foreign('cod_bill')->references('cod_bill')->on('bill_sales');
             $table->timestamps();
         });
     }

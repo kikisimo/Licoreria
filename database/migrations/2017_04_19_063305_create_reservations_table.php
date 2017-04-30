@@ -14,10 +14,10 @@ class CreateReservationsTable extends Migration
     public function up()
     {
         Schema::create('reservations', function (Blueprint $table) {
-            $table->increments('cod_reserva');
-            $table->date('fecha');
-            $table->float('cantidad');
-            $table->boolean('flag_estado');
+            $table->increments('cod_reservation');
+            $table->date('date');
+            $table->integer('quantity');
+            $table->boolean('status');
             $table->timestamps();
         });
     }

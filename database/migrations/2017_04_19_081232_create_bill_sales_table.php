@@ -14,11 +14,11 @@ class CreateBillSalesTable extends Migration
     public function up()
     {
         Schema::create('bill_sales', function (Blueprint $table) {
-            $table->increments('cod_facturaV');
+            $table->increments('cod_bill');
             $table->integer('cod_lico')->nullable()->unsigned();
             $table->foreign('cod_lico')->references('cod_lico')->on('liquor_stores');
-            $table->integer('cod_VP')->nullable()->unsigned();
-            $table->foreign('cod_VP')->references('cod_VP')->on('sale_products');
+            $table->integer('cod_sale_product')->nullable()->unsigned();
+            $table->foreign('cod_sale_product')->references('cod_VP')->on('sale_products');
             $table->timestamps();
         });
     }

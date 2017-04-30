@@ -15,10 +15,10 @@ class CreateLiquorStoresTable extends Migration
     {
         Schema::create('liquor_stores', function (Blueprint $table) {
             $table->increments('cod_lico');
-            $table->string('nombre');
-            $table->string('direccion');
-            $table->float('telefono');
-            $table->float('NIT')->unique();
+            $table->string('name');
+            $table->string('address');
+            $table->string('phone');
+            $table->string('NIT')->unique();
             $table->timestamps();
         });
     }

@@ -14,10 +14,10 @@ class CreateSaleProductsTable extends Migration
     public function up()
     {
         Schema::create('sale_products', function (Blueprint $table) {
-            $table->increments('cod_VP');
+            $table->increments('cod_sale_product');
             $table->float('cantidad');
-            $table->integer('cod_venta')->nullable()->unsigned();
-            $table->foreign('cod_venta')->references('cod_venta')->on('sales');
+            $table->integer('cod_sale')->nullable()->unsigned();
+            $table->foreign('cod_sale')->references('cod_venta')->on('sales');
             $table->integer('cod_prod')->nullable()->unsigned();
             $table->foreign('cod_prod')->references('cod_prod')->on('products');
             $table->timestamps();
