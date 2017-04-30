@@ -320,7 +320,11 @@
               <a href="#">
                 <i class="fa fa-dashboard"></i> <span>Inicio</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
-
+                            <ul class="treeview-menu">
+                                <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Altas</a></li>
+                                <li><a href="index2.html"><i class="fa fa-circle-o"></i> Bajas</a></li>
+                                <li><a href="index2.html"><i class="fa fa-circle-o"></i> Modificaciones</a></li>
+                            </ul>
             </li>
             <li class="treeview">
               <a href="#">
