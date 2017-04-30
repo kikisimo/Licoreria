@@ -14,9 +14,9 @@ class PurchasesSeeder extends Seeder
         DB::table('purchases')->delete();
         for ($i=0; $i<10; $i++) {
             purchase::create([
-                'fecha' => \Carbon\Carbon::now(),
-                'cantidad' => 43+$i,
-                'precio_unitario' => 123123,
+                'date' => \Carbon\Carbon::now(),
+                'quantity' => 43+$i,
+                'price' => 123123,
 
             ]);
             //returning ("ci_cliente");

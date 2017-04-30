@@ -16,9 +16,9 @@ class ReservationsSeeder extends Seeder
 
         for ($i=0; $i<10; $i++) {
             reservation::create([
-                'fecha' => \Carbon\Carbon::now(),
-                'cantidad' => 43+$i,
-                'flag_estado' => false
+                'date' => \Carbon\Carbon::now(),
+                'quantity' => 43+$i,
+                'status' => false
 
 
             ]);

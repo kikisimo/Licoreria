@@ -17,8 +17,8 @@ class CategoriesSeeder extends Seeder
 
         for ($i=0; $i<10; $i++) {
             category::create([
-                'categoria' => 'categoria '.$i,
-                'descripcion' => 'Descripcion '.$i
+                'category' => 'category'.$i,
+                'description' => 'description '.$i
 
 
 

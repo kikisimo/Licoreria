@@ -15,11 +15,11 @@ class PeopleSeeder extends Seeder
         DB::table('people')->delete();
         for ($i=0; $i<10; $i++) {
             person::create([
-                'nombre' => 'nombre '.$i,
-                'apellido' => 'apellido  '.$i,
-                'telefono' => 123123,
-                'direccion' => 'achumani '.$i,
-                'correo' => 'ejemplo@gmail.com  '.$i
+                'name' => 'nombre '.$i,
+                'lastname' => 'apellido  '.$i,
+                'phone' => 123123,
+                'address' => 'achumani '.$i,
+                'e_mail' => 'ejemplo@gmail.com  '.$i
 
 
             ]);

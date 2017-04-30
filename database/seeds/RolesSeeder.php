@@ -15,8 +15,8 @@ class RolesSeeder extends Seeder
         DB::table('roles')->delete();
         for ($i=0; $i<10; $i++) {
             role::create([
-                'cargo' => 'cargo '.$i,
-                'descripcion' => 'ninguna  '.$i
+                'position' => 'cargo '.$i,
+                'description' => 'ninguna  '.$i
 
 
             ]);

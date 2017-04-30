@@ -29,9 +29,9 @@ class SaleSeeder extends Seeder
 
            $sale= sale::create([
 
-                'fecha' => \Carbon\Carbon::now(),
-                'hora' => \Carbon\Carbon::now(),
-                'observacion' => 'ejemplo@gmail.com  '.$i,
+                //'date' => \Carbon\Carbon::now(),
+                //'h' => \Carbon\Carbon::now(),
+                'observation' => 'ejemplo@gmail.com  '.$i,
 
             ]);
         }

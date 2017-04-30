@@ -23,7 +23,7 @@ class BillissuesSeeders extends Seeder
 
         for ($i=0; $i<10; $i++) {
             billIssue::create([
-                'fecha_emision' => \Carbon\Carbon::now()
+                'issue_date' => \Carbon\Carbon::now()
             ]);
         }
     }

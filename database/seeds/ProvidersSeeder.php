@@ -17,11 +17,11 @@ class ProvidersSeeder extends Seeder
 
         for ($i=0; $i<10; $i++) {
             provider::create([
-                'nombre' => 'Proveedor'.$i,
-                'telefono' => 2711563+$i,
-                'correo' => 'rasebasss@gmail.com'.$i,
-                'direccion' => 'obrajes calle  '.$i,
-                'observacion' => 'bien no mas xDDDD'
+                'name' => 'Proveedor'.$i,
+                'phone' => 2711563+$i,
+                'e_mail' => 'rasebasss@gmail.com'.$i,
+                'address' => 'obrajes calle  '.$i,
+                'observation' => 'bien no mas xDDDD'
 
 
             ]);

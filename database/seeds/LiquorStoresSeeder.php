@@ -16,9 +16,9 @@ class LiquorStoresSeeder extends Seeder
 
 
             liquor_store::create([
-                'nombre' => 'Licoreria de la Esquina',
-                'direccion' => 'achumani calle 10',
-                'telefono' => 69877009,
+                'name' => 'Licoreria de la Esquina',
+                'address' => 'achumani calle 10',
+                'phone' => 69877009,
                  'NIT' => 7845
 
 

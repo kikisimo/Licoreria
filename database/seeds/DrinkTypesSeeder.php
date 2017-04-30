@@ -17,8 +17,8 @@ class DrinkTypesSeeder extends Seeder
 
         for ($i=0; $i<10; $i++) {
             drinktype::create([
-                'tipo' => 'tipo '.$i,
-                'descripcion' => 'Descripcion '.$i
+                'type' => 'tipo '.$i,
+                'description' => 'Descripcion '.$i
 
 
 

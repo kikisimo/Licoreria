@@ -15,8 +15,8 @@ class PrivilegesSeeder extends Seeder
         DB::table('privileges')->delete();
         for ($i=0; $i<10; $i++) {
             privilege::create([
-                'nombre' => 'nombre '.$i,
-                'descripcion' => 'ninguna  '.$i
+                'name' => 'nombre '.$i,
+                'description' => 'ninguna  '.$i
 
 
             ]);

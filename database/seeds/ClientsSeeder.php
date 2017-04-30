@@ -15,11 +15,11 @@ class ClientsSeeder extends Seeder
         DB::table('clients')->delete();
         for ($i=0; $i<10; $i++) {
             client::create([
-                'nombre' => 'nombre '.$i,
-                'apellido' => 'apellido  '.$i,
-                'nit' => 12345,
-                'telefono' => 123123,
-                'correo' => 'ejemplo@gmail.com  '.$i
+                'name' => 'name'.$i,
+                'lastname' => 'lastname  '.$i,
+                'nit' =>2345,
+                'phone' => 123123,
+                'e_mail' => 'ejemplo@gmail.com  '.$i
 
             ]);
         }

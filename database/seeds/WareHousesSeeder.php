@@ -18,9 +18,9 @@ class WareHousesSeeder extends Seeder
 
         for ($i=0; $i<10; $i++) {
             warehouse::create([
-                'precio_unitario' => 123123,
-                'cantidad' => 43+$i,
-                'cantidad_minima' => false
+                'quantity' => 123123,
+                'price' => 43+$i,
+                'minumum_quantity' => false
 
 
 

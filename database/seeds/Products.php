@@ -21,10 +21,10 @@ class ProductsSeeder extends Seeder
         DB::table('products')->delete();
         for ($i=0; $i<10; $i++) {
             product::create([
-                'nombre' => 'nombre '.$i,
-                'marca' => 'marca  '.$i,
-                'contenidoNeto' => 'contenidoNeto  '.$i,
-                'fechaVencimiento' => \Carbon\Carbon::now()
+                'name' => 'nombre '.$i,
+                'brand' => 'marca  '.$i,
+                'content' => 'contenidoNeto  '.$i,
+                'due_date' => \Carbon\Carbon::now()
             ]);
         }
     }

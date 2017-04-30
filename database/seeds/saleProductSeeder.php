@@ -23,7 +23,7 @@ class saleProductSeeder extends Seeder
         DB::table('sale_products')->delete();
         for ($i=0; $i<10; $i++) {
             saleProduct::create([
-                'cantidad' => 80,
+                'quantity' => 80,
 
             ]);
         }
