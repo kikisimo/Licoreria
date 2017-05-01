@@ -63,6 +63,11 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
+//RUTAS RAFASEBASS
+
+Route::get('Login', function () {
+    return view('Login');
+});
 
 
-
+//TERMINA RUTAS RAFASEBASS
