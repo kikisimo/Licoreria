@@ -21,6 +21,18 @@ class ProductController extends Controller
     {
         return view ('products.create_product');
     }
+    public function save(Request $request)
+    {
+        //echo $request -> input('name');
+        $product = new Product();
+        $product -> name = $request ->input('name');
+        $product -> brand = $request ->input('brand');
+        $product -> content = $request ->input('content');
+        $product -> due_date = $request ->input('due_date');
+        $product -> save();
+        $products = Product::all();
+        return view('products.listAll',['products'=>$products]);
+    }
     public function update()
     {
 
