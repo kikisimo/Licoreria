@@ -23,19 +23,19 @@ Route::get('base', function () {
 
 Route::get('catalogs','CatalogController@listAll');
 
-
+//CRUD Altas Productos
 Route::get('products','ProductController@listAll');
-Route::get('products/create','ProductController@create');
+Route::get('products/create_product','ProductController@create_product');
 Route::get('products/update','ProductController@update');
 Route::get('products/delete','ProductController@delete');
 Route::get('products/show','ProductController@show');
 //Auth::routes();
 
-
+/*
 Route::get('products','ProductController@listAll');
 Route::get('products/create','ProductController@create');
 Route::get('products/update','ProductController@update');
-
+*/
 /*Route::get('home', [
     'as' => 'home',
     'uses' => 'HomeController@index'
@@ -61,10 +61,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 
-//CRUD Categories
-/*
-Route::get('categories','CategoryController@listAll');
-Route::get('categories/create','CategoryController@create');
-Route::get('categories/update','CategoryController@update');
-Route::get('categories/delete','CategoryController@delete');
-Route::get('categories/show','CategoryController@show');*/
+
+
