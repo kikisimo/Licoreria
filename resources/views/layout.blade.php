@@ -12,7 +12,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <h1 class="page-header text-center">CRUD Usuarios</h1>
+                <h1 class="page-header text-center">Licoreria "Super originales"</h1>
             </div>
 
             @yield('content')

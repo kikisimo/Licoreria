@@ -51,8 +51,10 @@ Route::get('home', [
 ]);
 */
 
-//Rutas para CRUD usuario (crea todas las routas)
-Route::resource('users', 'UsuarioController');
+//Rutas para CRUD users (crea todas las routas)
+//Route::resource('users', 'UsuarioController');
+//Rutas para Productos de WILDE
+Route::resource('products', 'ProductController');
 // ¡?¡?
 Auth::routes();
 Route::get('/home', 'HomeController@index');

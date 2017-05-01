@@ -45,4 +45,10 @@ class ProductController extends Controller
     {
 
     }
+    //Parte Wilde
+    public function index()
+    {
+        $products = Product::orderBy('cod_prod', 'DESC')->paginate();
+        return view('products.index', compact('products'));
+    }
 }
