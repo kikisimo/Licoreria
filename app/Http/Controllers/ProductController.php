@@ -28,6 +28,7 @@ class ProductController extends Controller
         $product -> name = $request ->input('name');
         $product -> brand = $request ->input('brand');
         $product -> content = $request ->input('content');
+        $product -> due_date = $request ->input('due_date');
         $product -> save();
         $products = Product::all();
         return view('products.listAll',['products'=>$products]);
