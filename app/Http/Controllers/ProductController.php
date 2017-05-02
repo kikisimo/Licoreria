@@ -21,6 +21,7 @@ class ProductController extends Controller
     {
         return view ('products.create_product');
     }
+    #Parte Lucho
     public function save(Request $request)
     {
         //echo $request -> input('name');
@@ -30,8 +31,10 @@ class ProductController extends Controller
         $product -> content = $request ->input('content');
         $product -> due_date = $request ->input('due_date');
         $product -> save();
-        $products = Product::all();
-        return view('products.listAll',['products'=>$products]);
+        /*$products = Product::all();
+        return view('products.listAll',['products'=>$products]);*/
+        $products = Product::orderBy('cod_prod', 'DESC')->paginate();
+        return view('products.index', compact('products'));
     }
     public function update()
     {
