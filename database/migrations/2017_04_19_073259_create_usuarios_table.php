@@ -17,11 +17,18 @@ class CreateUsuariosTable extends Migration
             $table->increments('id_user');
             $table->string('username');
             $table->string('password');
-            $table->integer('ci_person')->nullable()->unsigned();
-            $table->foreign('ci_person')->references('ci_person')->on('people');
+            $table->string('ci_person');
+            $table->string('name');
+            $table->string('last_name');
+            $table->string('phone');
+            $table->string('email');
+            $table->string('role');
 
-            $table->integer('cod_privilege')->nullable()->unsigned();
-            $table->foreign('cod_privilege')->references('cod_privilege')->on('privileges');
+           // $table->integer('ci_person')->nullable()->unsigned();
+            //$table->foreign('ci_person')->references('ci_person')->on('people');
+
+            //$table->integer('cod_privilege')->nullable()->unsigned();
+            //$table->foreign('cod_privilege')->references('cod_privilege')->on('privileges');
             $table->timestamps();
         });
     }

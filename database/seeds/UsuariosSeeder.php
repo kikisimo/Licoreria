@@ -16,7 +16,13 @@ class UsuariosSeeder extends Seeder
         for ($i=0; $i<10; $i++) {
             usuario::create([
                 'username' => 'nombreusuario'.$i,
-                'password' => '****'.$i
+                'password' => '****'.$i,
+                'ci_person' => '1512'.$i,
+                'name' => 'nombre '.$i,
+                'last_name' => 'apellido '.$i,
+                'phone' => '5849'.$i,
+                'email' => 'correo@hotmail.com'.$i,
+                'role' => 'administrador '.$i,
 
 
 
