@@ -18,7 +18,9 @@ Route::get('login', function () {
     return view('login');
 });
 Route::get('base', function () {
-    return view('base');
+    //$sesion = Sesion::usuario('administrador')->first();
+
+    return view('base')/*->with('sesion',$sesion->nombre)*/;
 });
 
 Route::get('catalogs','CatalogController@listAll');
