@@ -64,10 +64,9 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 //RUTAS RAFASEBASS
+Route::get('Login','UsuarioController@loadView');
 
-Route::get('Login', function () {
-    return view('Login');
-});
+Route::post('base','UsuarioController@verify');
 
 
 //TERMINA RUTAS RAFASEBASS

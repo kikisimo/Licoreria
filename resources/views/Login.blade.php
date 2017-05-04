@@ -76,10 +76,12 @@
 <body>
 <div class="login">
     <h1>Login Licoreria de la Esquina</h1>
-    <form method="post">
-        <input type="text" name="u" placeholder="Username" required="required" />
-        <input type="password" name="p" placeholder="Password" required="required" />
-        <button type="submit" class="btn btn-primary btn-block btn-large">Let me in.</button>
+    <form method="post"action="base">
+        <input type="hidden" name="_token" value="{{csrf_token()}}">
+        <input type="text" name="u" id="u" placeholder="Username" required="required" />
+        <input type="password" name="p" id="p" placeholder="Password" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large" onclick="location.href='/Licoreria/public/base'" >Let me in.</button>
+
     </form>
 </div>
 

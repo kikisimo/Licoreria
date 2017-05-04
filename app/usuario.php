@@ -30,4 +30,6 @@ class usuario extends Model
     {
         return $this -> hasMany('App\sale');
     }
+
+
 }
