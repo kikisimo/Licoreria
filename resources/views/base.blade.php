@@ -321,7 +321,7 @@
                 <i class="fa fa-dashboard"></i> <span>Inicio</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
                             <ul class="treeview-menu">
-                                <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Altas</a></li>
+                                <li class="active"><a href="/licoreria/public/products/create_product"><i class="fa fa-circle-o"></i> Registro de Productos</a></li>
                                 <li><a href="index2.html"><i class="fa fa-circle-o"></i> Bajas</a></li>
                                 <li><a href="index2.html"><i class="fa fa-circle-o"></i> Modificaciones</a></li>
                             </ul>
@@ -345,17 +345,11 @@
               </a>
             </li>
             <li class="treeview">
-              <a href="#">
+              <a href="{{ route('products.index') }}">
                 <i class="fa fa-pie-chart"></i>
-                <span>Productos</span>
+                <span>Productos</span> <small class="label pull-right bg-green">Parte Wilde</small>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
-              <ul class="treeview-menu">
-                <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
-                <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
-                <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
-                <li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
-              </ul>
             </li>
             <li class="treeview">
               <a href="#">

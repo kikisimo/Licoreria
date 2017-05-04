@@ -21,6 +21,7 @@ class ProductsSeeder extends Seeder
         DB::table('products')->delete();
         for ($i=0; $i<10; $i++) {
             product::create([
+
                 'name' => 'nombre '.$i,
                 'brand' => 'marca  '.$i,
                 'content' => 'contenidoNeto  '.$i,

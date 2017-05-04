@@ -17,7 +17,6 @@ class PurchasesSeeder extends Seeder
                 'date' => \Carbon\Carbon::now(),
                 'quantity' => 43+$i,
                 'price' => 123123,
-
             ]);
             //returning ("ci_cliente");
         }

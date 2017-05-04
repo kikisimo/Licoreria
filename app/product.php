@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\purchase;
 
 class product extends Model
 {
@@ -37,4 +38,5 @@ class product extends Model
 
         return $this -> hasMany('App\purchase');
     }
+
 }
