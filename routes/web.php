@@ -26,10 +26,18 @@ Route::get('catalogs','CatalogController@listAll');
 //CRUD Altas Productos
 Route::get('products','ProductController@listAll');
 Route::get('products/create_product','ProductController@create_product');
+
 Route::post('products/save','ProductController@save');
 Route::get('products/update','ProductController@update');
 Route::get('products/delete','ProductController@delete');
 Route::get('products/show','ProductController@show');
+
+//CRUD Proveedores
+Route::get('providers/create_providers','ProviderController@create_providers');
+Route::post('providers/save','ProviderController@save');
+Route::get('providers/update','ProviderController@update');
+Route::get('providers/delete','ProviderController@delete');
+Route::get('providers/show','ProviderController@show');
 //Auth::routes();
 
 /*

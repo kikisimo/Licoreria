@@ -351,19 +351,13 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
             </li>
-            <li class="treeview">
+            <li class="active treeview">
               <a href="#">
-                <i class="fa fa-laptop"></i>
-                <span>Inventario</span>
-                <i class="fa fa-angle-left pull-right"></i>
+                <i class="fa fa-dashboard"></i> <span>Proveedores</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> General</a></li>
-                <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> Icons</a></li>
-                <li><a href="pages/UI/buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
-                <li><a href="pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
-                <li><a href="pages/UI/timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>
-                <li><a href="pages/UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>
+                <li class="active"><a href="/licoreria/public/providers/create_providers"><i class="fa fa-circle-o"></i> Registro de Proveedores</a></li>
+
               </ul>
             </li>
 

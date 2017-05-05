@@ -3,6 +3,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Product;
 use DB;
+use Illuminate\Support\Facades\Redirect;
 class ProductController extends Controller
 {
     /*public function listAll()
@@ -33,7 +34,7 @@ class ProductController extends Controller
         $products = Product::orderBy('cod_prod', 'DESC')->paginate();
         return view('products.index', compact('products'));
     }
-    public function update()
+    /*public function update()
     {
     }
     public function delete()
@@ -44,11 +45,22 @@ class ProductController extends Controller
     }
     public function show()
     {
-    }
+    }*/
     //Parte Wilde
     public function index()
     {
         $products = Product::orderBy('cod_prod', 'DESC')->paginate();
         return view('products.index', compact('products'));
+    }
+
+    //Parte Wilde DELETE
+
+    //Parte Wilde
+    public function destroy($cod_prod)
+    {
+        $product = Product::find($cod_prod);
+        $product->delete();
+
+        return back()->with('info', 'El producto ha sido eliminado correctamente');
     }
 }
