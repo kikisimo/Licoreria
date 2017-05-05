@@ -23,15 +23,19 @@ Route::get('base', function () {
 
 Route::get('catalogs','CatalogController@listAll');
 
-//CRUD Altas Productos
+//CRUD Altas Productos Lucho
 Route::get('products','ProductController@listAll');
 Route::get('products/create_product','ProductController@create_product');
 Route::post('products/save','ProductController@save');
 Route::get('products/update','ProductController@update');
 Route::get('products/delete','ProductController@delete');
 Route::get('products/show','ProductController@show');
+//comentado por lucho para el Sprint 2
+/*Route::get('categories','CategoryController@listAll');
+Route::get('categories/create','CategoryController@create');
+Route::post('categories/save_categories','CategoryController@save_categories');*/
 //Auth::routes();
-
+//Sprint 2 
 /*
 Route::get('products','ProductController@listAll');
 Route::get('products/create','ProductController@create');

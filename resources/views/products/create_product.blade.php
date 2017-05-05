@@ -19,10 +19,24 @@
         <input type="text" id="content" name="content"><br><br>
         <span class="content">FECHA INGRESO:   </span><br>
         <input type="date" id="due_date" name="due_date"><br><br>
-        <input type="submit" value="guardar">
+
+
+            <!--comentado por Lucho-->
+
+    <!--  <form method="post"action="/licoreria/public/categories/save_categories">
+        <input type="hidden" name="_token" value="{{csrf_token()}}">
+        <center>
+            <span class="title">CATEGORIA:  </span><br>
+            <input type="text" id="category" name="category"><br><br>
+            <span class="layout">DESCRIPCION:   </span><br>
+            <input type="text" id="description" name="description"><br><br>
+
         </center>
     </form>
-
+    -->
+    <input type="submit" value="guardar">
+        </center>
+    </form>
     </tbody>
         <a href="/licoreria/public/base" class="btn btn-primary pull-right"->Pagina Principal</a>
     </div>

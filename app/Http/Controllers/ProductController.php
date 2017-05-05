@@ -22,7 +22,7 @@ class ProductController extends Controller
     {
         return view ('products.create_product');
     }
-    #Parte Lucho
+    //Parte Lucho
     public function save(Request $request)
     {
         //echo $request -> input('name');
