@@ -3,6 +3,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Product;
 use DB;
+use Illuminate\Support\Facades\Redirect;
 class ProductController extends Controller
 {
     /*public function listAll()
@@ -38,6 +39,9 @@ class ProductController extends Controller
     }
     public function delete()
     {
+        $products = Product::orderBy('cod_prod', 'DESC')->paginate();
+        return view('products.bajas', compact('products'));
+
     }
     public function show()
     {

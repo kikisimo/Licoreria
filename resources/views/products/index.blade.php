@@ -42,7 +42,11 @@
     </div>
     <div class="col-sm-4">
 
+
+
+
         @include('products.fragment.aside')
+
 
     </div>
 
