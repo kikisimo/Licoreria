@@ -76,5 +76,7 @@ Route::get('Login','UsuarioController@loadView');
 
 Route::post('base','UsuarioController@verify');
 
+Route::get('/register','RegistrationController@register');
+
 
 //TERMINA RUTAS RAFASEBASS
