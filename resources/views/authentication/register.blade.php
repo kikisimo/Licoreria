@@ -9,7 +9,7 @@
                </div>
 
                <div class=" panel-body">
-                   <form action="" method="post">
+                   <form action="/register" method="post">
                        {{ csrf_field() }}
 
 
@@ -56,8 +56,7 @@
                        </div>
 
                        <div class="form-group">
-
-                              <input type="submit " value="register" class="btn btn-success pull-right">
+                              <input type="submit" value="Register" class="btn btn-success pull-right">
 
                        </div>
                    </form>
