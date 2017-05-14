@@ -11,5 +11,3 @@ class RegistrationController extends Controller
         return view('authentication.register');
     }
 }
-
-C:\Users\Rafasebass\Desktop\taller2017\Licoreria\app\Http\Controllers\RegistrationController.php
