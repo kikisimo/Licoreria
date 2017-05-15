@@ -21,7 +21,4 @@ class RegistrationController extends Controller
 
     }
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 8658929cdd951ee33cb5387465aa3eb05ca6c378
