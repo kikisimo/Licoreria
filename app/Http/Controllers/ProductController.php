@@ -9,10 +9,7 @@ use Illuminate\Support\Facades\Redirect;
 
 class ProductController extends Controller
 {
-    /*public function listAll()
-    {
-        echo ('hola malasos');
-    }*/
+
     public function listAll()
     {
        $products = Product::all();

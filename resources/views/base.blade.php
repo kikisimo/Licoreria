@@ -322,8 +322,8 @@
               </a>
                             <ul class="treeview-menu">
                               <li class="active"><a href="/licoreria/public/products/create_product"><i class="fa fa-circle-o"></i> Registro de Productos</a></li>
-                              <li class="active"><a href="/licoreria/public/products/bajas"><i class="fa fa-circle-o"></i>Bajas</a></li>
-                                <li><a href="index2.html"><i class="fa fa-circle-o"></i> Modificaciones</a></li>
+                              <li class="active"><a href="/licoreria/public/categories/index"> <i class="fa fa-circle-o"></i>Categorias</a></li>
+                              <li><a href="index2.html"><i class="fa fa-circle-o"></i> Tipos</a></li>
                             </ul>
             </li>
             <li class="treeview">
@@ -435,8 +435,6 @@
             <li class="active">Productos</li>
           </ol>
         </section>
-
-
 
   </body>
 </html>
