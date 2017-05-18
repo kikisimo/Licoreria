@@ -32,39 +32,20 @@ Route::get('products/update','ProductController@update');
 Route::get('products/delete','ProductController@delete');
 Route::get('products/show','ProductController@show');
 
-//comentado por lucho para el Sprint 2
-/*Route::get('categories','CategoryController@listAll');
-Route::get('categories/create','CategoryController@create');
-Route::post('categories/save_categories','CategoryController@save_categories');*/
-
-
 //CRUD Proveedores
 Route::get('providers/create_providers','ProviderController@create_providers');
 Route::post('providers/save','ProviderController@save');
 Route::get('providers/update','ProviderController@update');
 Route::get('providers/delete','ProviderController@delete');
 Route::get('providers/show','ProviderController@show');
+//CRUD CATEGORIAS Parte Lucho
+Route::resource('categories','CategoryController');
+Auth::routes();
 
-//Auth::routes();
-//Sprint 2 
-/*
-Route::get('products','ProductController@listAll');
-Route::get('products/create','ProductController@create');
-Route::get('products/update','ProductController@update');
-*/
-/*Route::get('home', [
-    'as' => 'home',
-    'uses' => 'HomeController@index'
-]);
-*/
-//Route::get('/home', 'HomeController@index');
+//CRUD Tipos de Bebida Parte Lucho
+Route::resource('drinktypes','DrinktypeController');
+Auth::routes();
 
-/*
-Route::get('home', [
-    'as' => 'home',
-    'uses' => 'HomeController@index'
-]);
-*/
 
 //Rutas para CRUD users (crea todas las routas)
 //Route::resource('users', 'UsuarioController');
