@@ -348,18 +348,18 @@
               <a href="{{ route('products.index') }}">
                 <i class="fa fa-pie-chart"></i>
                 <span>Productos</span>
+                <small class="label pull-right bg-green">W</small>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
             </li>
             <li class="active treeview">
-              <a href="#">
-                <i class="fa fa-dashboard"></i> <span>Proveedores</span> <i class="fa fa-angle-left pull-right"></i>
+              <a href="{{ route('providers.index') }}">
+                <i class="fa fa-dashboard"></i> <span>Proveedores</span>
+                <small class="label pull-right bg-green">W</small>
+                <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
                 <li class="active"><a href="/licoreria/public/providers/create_providers"><i class="fa fa-circle-o"></i> Registro de Proveedores</a></li>
-                  <li class="active"><a href="/licoreria/public/providers/create_providers"><i class="fa fa-circle-o"></i> Actualizar Proveedores</a></li>
-                  <li class="active"><a href="/licoreria/public/providers/create_providers"><i class="fa fa-circle-o"></i> Eliminar Proveedores</a></li>
-
               </ul>
             </li>
 

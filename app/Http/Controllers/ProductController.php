@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Product;
 use DB;
 use Illuminate\Support\Facades\Redirect;
-
+use App\Http\Requests\ProductRequest;
 class ProductController extends Controller
 {
 
@@ -61,13 +61,18 @@ class ProductController extends Controller
         $product = Product::find($cod_prod);
         return view('products.edit', compact('product'));
     }
-    public function update($cod_prod, Request $request)
+    public function update(ProductRequest $request, $cod_prod)
     {
         $product = Product::find($cod_prod);
-        $product->fill($request->all());
-        $product->save();
 
-        return view('products.update', compact('product'));
+        $product ->name = $request->name;
+        $product ->brand = $request->brand;
+        $product ->content = $request->content;
 
+        $product ->save();
+
+        return redirect()->route('products.index')
+
+            ->with('info', 'El producto fue actualizado');
     }
 }

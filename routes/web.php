@@ -51,6 +51,7 @@ Auth::routes();
 //Route::resource('users', 'UsuarioController');
 //Rutas para Productos de WILDE
 Route::resource('products', 'ProductController');
+Route::resource('providers', 'ProviderController');
 // ¡?¡?
 Auth::routes();
 Route::get('/home', 'HomeController@index');
