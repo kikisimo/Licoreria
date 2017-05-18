@@ -42,12 +42,10 @@ Route::get('providers/show','ProviderController@show');
 Route::resource('categories','CategoryController');
 Auth::routes();
 
-/*Route::get('categories','CategoryController@listAll');
-Route::get('categories/create','CategoryController@create');
-Route::post('categories/save','CategoryController@save');
-Route::get('categories/update','CategoryController@update');
-Route::get('categories/delete','CategoryController@delete');
-Route::get('categories/show','CategoryController@show');*/
+//CRUD Tipos de Bebida Parte Lucho
+Route::resource('drinktypes','DrinktypeController');
+Auth::routes();
+
 
 //Rutas para CRUD users (crea todas las routas)
 //Route::resource('users', 'UsuarioController');
