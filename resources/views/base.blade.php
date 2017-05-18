@@ -357,6 +357,8 @@
               </a>
               <ul class="treeview-menu">
                 <li class="active"><a href="/licoreria/public/providers/create_providers"><i class="fa fa-circle-o"></i> Registro de Proveedores</a></li>
+                  <li class="active"><a href="/licoreria/public/providers/create_providers"><i class="fa fa-circle-o"></i> Actualizar Proveedores</a></li>
+                  <li class="active"><a href="/licoreria/public/providers/create_providers"><i class="fa fa-circle-o"></i> Eliminar Proveedores</a></li>
 
               </ul>
             </li>
