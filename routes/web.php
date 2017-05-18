@@ -41,13 +41,13 @@ Route::get('providers/show','ProviderController@show');
 //CRUD CATEGORIAS Parte Lucho
 Route::resource('categories','CategoryController');
 Auth::routes();
-Route::get('categories','CategoryController@listAll');
-Route::get('categories/create','CategoryController@create_product');
 
+/*Route::get('categories','CategoryController@listAll');
+Route::get('categories/create','CategoryController@create');
 Route::post('categories/save','CategoryController@save');
 Route::get('categories/update','CategoryController@update');
 Route::get('categories/delete','CategoryController@delete');
-Route::get('categories/show','CategoryController@show');
+Route::get('categories/show','CategoryController@show');*/
 
 //Rutas para CRUD users (crea todas las routas)
 //Route::resource('users', 'UsuarioController');
