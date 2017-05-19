@@ -13,7 +13,16 @@ class LoginController extends Controller
     }
     public function postLogin(Request $request)
     {
-        Sentinel::authenticate($request->all());
+       $usuario= Sentinel::authenticate($request->all());
+       if ($usuario==true)
+       {
+           return view ('base');
+       }
+       else
+       {
+           return view ('authentication.loginFail');
+
+       }
         return Sentinel::check();
     }
 }

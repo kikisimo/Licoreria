@@ -17,7 +17,7 @@ class RegistrationController extends Controller
     {
         $user = Sentinel::registerAndActivate($request->all());
        // dd($user);
-        return redirect('/');
+        return redirect('login');
 
 
 
