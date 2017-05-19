@@ -40,9 +40,9 @@ class ProductController extends Controller
 
     }
     //Parte Wilde
-    public function index()
+    public function index(Request $request)
     {
-        $products = Product::orderBy('cod_prod', 'DESC')->paginate();
+        $products = Product::search($request->name)->orderBy('cod_prod', 'DESC')->paginate(5);
         return view('products.index', compact('products'));
     }
 

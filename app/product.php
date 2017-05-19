@@ -44,5 +44,9 @@ class product extends Model
         return $this -> hasMany('App\purchase');
     }
 */
-
+//Scope Wilde no tocar
+    public function scopeSearch($query, $name)
+    {
+        return $query->where('name', 'LIKE', "%$name");
+    }
 }
