@@ -8,9 +8,14 @@ class drinktype extends Model
 {
     protected $primaryKey = 'cod_dt';
 
+    protected $fillable = [
+        'type', 'description',
+    ];
+ /*
     public function products()
     {
 
         return $this -> hasMany('App\product');
     }
+ */
 }

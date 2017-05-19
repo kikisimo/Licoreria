@@ -25,38 +25,35 @@ Route::get('base', function () {
 
 Route::get('catalogs','CatalogController@listAll');
 
-//CRUD Altas Productos
+//CRUD Altas Productos Lucho
 Route::get('products','ProductController@listAll');
 Route::get('products/create_product','ProductController@create_product');
+
 Route::post('products/save','ProductController@save');
 Route::get('products/update','ProductController@update');
 Route::get('products/delete','ProductController@delete');
 Route::get('products/show','ProductController@show');
-//Auth::routes();
 
-/*
-Route::get('products','ProductController@listAll');
-Route::get('products/create','ProductController@create');
-Route::get('products/update','ProductController@update');
-*/
-/*Route::get('home', [
-    'as' => 'home',
-    'uses' => 'HomeController@index'
-]);
-*/
-//Route::get('/home', 'HomeController@index');
+//CRUD Proveedores
+Route::get('providers/create_providers','ProviderController@create_providers');
+Route::post('providers/save','ProviderController@save');
+Route::get('providers/update','ProviderController@update');
+Route::get('providers/delete','ProviderController@delete');
+Route::get('providers/show','ProviderController@show');
+//CRUD CATEGORIAS Parte Lucho
+Route::resource('categories','CategoryController');
+Auth::routes();
 
-/*
-Route::get('home', [
-    'as' => 'home',
-    'uses' => 'HomeController@index'
-]);
-*/
+//CRUD Tipos de Bebida Parte Lucho
+Route::resource('drinktypes','DrinktypeController');
+Auth::routes();
+
 
 //Rutas para CRUD users (crea todas las routas)
 //Route::resource('users', 'UsuarioController');
 //Rutas para Productos de WILDE
 Route::resource('products', 'ProductController');
+Route::resource('providers', 'ProviderController');
 // ¡?¡?
 Auth::routes();
 Route::get('/home', 'HomeController@index');
@@ -69,6 +66,12 @@ Route::get('/home', 'HomeController@index');
 Route::get('Login','UsuarioController@loadView');
 
 Route::post('base','UsuarioController@verify');
+
+Route::get('/register','RegistrationController@register');
+Route::post('/register','RegistrationController@postRegister');
+
+Route::get('/login','LoginController@login');
+Route::post('/login','LoginController@postLogin');
 
 
 //TERMINA RUTAS RAFASEBASS

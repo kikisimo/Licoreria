@@ -5,13 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Product;
 use DB;
-
+use Illuminate\Support\Facades\Redirect;
+use App\Http\Requests\ProductRequest;
 class ProductController extends Controller
 {
-    /*public function listAll()
-    {
-        echo ('hola malasos');
-    }*/
+
     public function listAll()
     {
        $products = Product::all();
@@ -21,7 +19,7 @@ class ProductController extends Controller
     {
         return view ('products.create_product');
     }
-    #Parte Lucho
+    //Parte Lucho
     public function save(Request $request)
     {
         //echo $request -> input('name');
@@ -36,10 +34,6 @@ class ProductController extends Controller
         $products = Product::orderBy('cod_prod', 'DESC')->paginate();
         return view('products.index', compact('products'));
     }
-    public function update()
-    {
-
-    }
     public function delete()
     {
 
@@ -53,5 +47,32 @@ class ProductController extends Controller
     {
         $products = Product::orderBy('cod_prod', 'DESC')->paginate();
         return view('products.index', compact('products'));
+    }
+
+    public function destroy($cod_prod)
+    {
+        $product = Product::find($cod_prod);
+        $product->delete();
+
+        return back()->with('info', 'El producto ha sido eliminado correctamente');
+    }
+    public function edit($cod_prod)
+    {
+        $product = Product::find($cod_prod);
+        return view('products.edit', compact('product'));
+    }
+    public function update(ProductRequest $request, $cod_prod)
+    {
+        $product = Product::find($cod_prod);
+
+        $product ->name = $request->name;
+        $product ->brand = $request->brand;
+        $product ->content = $request->content;
+
+        $product ->save();
+
+        return redirect()->route('products.index')
+
+            ->with('info', 'El producto fue actualizado');
     }
 }
