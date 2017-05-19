@@ -250,8 +250,9 @@
           </a>
           <ul class="treeview-menu">
             <li class="active"><a href="products/altas.php"><i class="fa fa-circle-o"></i> Registro de Productos</a></li>
-            <li><a href="products/bajas.blade.php"><i class="fa fa-circle-o"></i> Borrar Productos</a></li>
-            <li><a href="index2.html"><i class="fa fa-circle-o"></i> Actualizar Productos</a></li>
+            <li><a href="http://192.168.99.100:9090/Licoreria/resources/views/products/bajas.blade.php"><i class="fa fa-circle-o"></i> Borrar Productos</a></li>
+            <li><a href="http://192.168.99.100:9090/Licoreria/resources/views/products/edit.blade.php"><i class="fa fa-circle-o"></i> Actualizar Productos</a></li>
+            <li><a href="http://192.168.99.100:9090/Licoreria/resources/views/products/listAll.blade.php"><i class="fa fa-circle-o"></i> Listado de Productos</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -261,9 +262,9 @@
             <span class="label label-primary pull-right">3</span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Registrar Nuevo Proveedor</a></li>
-            <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Editar Proveedor</a></li>
-            <li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Lista de Proveedores</a></li>
+            <li><a href="/licoreria/public/providers/create_providers"><i class="fa fa-circle-o"></i> Registrar Nuevo Proveedor</a></li>
+            <li><a href="http://192.168.99.100:9090/Licoreria/resources/views/products/edit.blade.php"><i class="fa fa-circle-o"></i> Editar Proveedor</a></li>
+            <li><a href="http://192.168.99.100:9090/Licoreria/resources/views/providers/show.blade.php"><i class="fa fa-circle-o"></i> Lista de Proveedores</a></li>
           </ul>
         </li>
         <li class="treeview">
