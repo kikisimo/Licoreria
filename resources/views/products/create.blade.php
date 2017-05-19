@@ -13,11 +13,11 @@
 
         @include('products.fragment.form1')
         {!! Form::close () !!}
-
+        <a href="/licoreria/public/base" class="btn btn-primary pull-right">Menu Principal</a>
     </div>
+
     <div class="col-sm-4">
 
-        @include('products.fragment.aside')
     </div>
 
 @endsection

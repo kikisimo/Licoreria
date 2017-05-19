@@ -9,7 +9,7 @@
         <p>
             {{$drinktype->description}}
         </p>
-
+        <a href="{{ route('categories.index') }}" class="btn btn-primary pull-right">Listado</a>
     </div>
     <div class="col-sm-4">
 
