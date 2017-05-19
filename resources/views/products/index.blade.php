@@ -6,6 +6,8 @@
             Productos
             <a href="{{route('products.create')}}" class="btn btn-primary pull-right"->Nuevo</a>
             <hr>
+
+
         </h2>
         @include('products.fragment.info')
     <!-- Buscador de productos -->
