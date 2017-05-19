@@ -321,7 +321,7 @@
                 <i class="fa fa-dashboard"></i> <span>Inicio</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
                             <ul class="treeview-menu">
-                              <li class="active"><a href="/licoreria/public/products/create_product"><i class="fa fa-circle-o"></i> Registro de Productos</a></li>
+                              <li class="active"><a href="{{ route('products.index') }}"><i class="fa fa-circle-o"></i> Registro de Productos</a></li>
                               <li class="active"><a href="{{ route('categories.index') }}"><i class="fa fa-circle-o"></i>Categorias</a></li>
                               <li class="active"><a href="{{ route('drinktypes.index') }}"><i class="fa fa-circle-o"></i> Tipos</a></li>
                             </ul>

@@ -7,37 +7,34 @@ use App\Product;
 use DB;
 use Illuminate\Support\Facades\Redirect;
 use App\Http\Requests\ProductRequest;
+
 class ProductController extends Controller
 {
 
-    public function listAll()
+
+    public function create()
     {
-       $products = Product::all();
-       return view('products.listAll',['products'=>$products]);
-    }
-    public function create_product()
-    {
-        return view ('products.create_product');
+        return view('products.create');
     }
     //Parte Lucho
-    public function save(Request $request)
+    public function store(ProductRequest $request)
     {
-        //echo $request -> input('name');
-        $product = new Product();
-        $product -> name = $request ->input('name');
-        $product -> brand = $request ->input('brand');
-        $product -> content = $request ->input('content');
-        $product -> due_date = $request ->input('due_date');
-        $product -> save();
-        /*$products = Product::all();
-        return view('products.listAll',['products'=>$products]);*/
-        $products = Product::orderBy('cod_prod', 'DESC')->paginate();
-        return view('products.index', compact('products'));
-    }
-    public function delete()
-    {
+        $product = new Product;
+
+        $product ->name = $request->name;
+        $product ->brand = $request->brand;
+        $product ->content = $request->content;
+        $product ->due_date = $request->due_date;
+
+        $product ->save();
+
+        return redirect()->route('products.index')
+
+            ->with('info', 'el Producto fue Guardado');
+
 
     }
+
     public function show()
     {
 

@@ -4,7 +4,7 @@
     <div class="col-sm-8">
         <h2>
             Productos
-            <a href="/licoreria/public/products/create_product" class="btn btn-primary pull-right"->Nuevo</a>
+            <a href="{{route('products.create')}}" class="btn btn-primary pull-right"->Nuevo</a>
 
         </h2>
         @include('products.fragment.info')

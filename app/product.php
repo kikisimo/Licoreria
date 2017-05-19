@@ -10,6 +10,10 @@ class product extends Model
     protected $primaryKey = 'cod_prod';
 
 
+    protected $fillable = [
+        'name', 'brand','content','due_date',
+    ];
+/*
     public function categories()
     {
         return $this -> belongsTo('App\category','cod_cat');
@@ -38,5 +42,6 @@ class product extends Model
 
         return $this -> hasMany('App\purchase');
     }
+*/
 
 }
