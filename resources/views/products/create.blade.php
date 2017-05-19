@@ -3,21 +3,21 @@
 @section('content')
     <div class="col-sm-8">
         <h2>
-            Editar Productos
+            Nuevo Producto
             <a href="{{ route('products.index') }}" class="btn btn-primary pull-right">Listado</a>
         </h2>
 
         @include('products.fragment.error')
 
-        {!! Form::model($product, ['route' => ['products.update', $product->cod_prod], 'method' => 'put' ]) !!}
+        {!! Form::open( ['route' => ['products.store'] ]) !!}
 
-        @include('products.fragment.form')
-
+        @include('products.fragment.form1')
         {!! Form::close () !!}
+        <a href="/licoreria/public/base" class="btn btn-primary pull-right">Menu Principal</a>
     </div>
+
     <div class="col-sm-4">
 
-        @include('products.fragment.aside')
     </div>
 
 @endsection
