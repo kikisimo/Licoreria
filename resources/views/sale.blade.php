@@ -1,10 +1,10 @@
 @extends('Layouts.base0')
 
 @section('title')
-Licoreria
+    Registro de Ventas
 @endsection
 @section('content')
 
-    <h1>Pagina Principal</h1>
+    <h1>Colocar contenido aca</h1>
 
 @endsection
