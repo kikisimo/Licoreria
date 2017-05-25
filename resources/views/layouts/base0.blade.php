@@ -255,6 +255,17 @@
             <li><a href="{{ url('products.listAll') }}"><i class="fa fa-circle-o"></i> Listado de Productos</a></li>
           </ul>
         </li>
+
+        <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Usuarios</span> <i class="fa fa-angle-left pull-right"></i>
+            <span class="label label-primary pull-right">3</span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="{{ url('auth.register') }}"><i class="fa fa-circle-o"></i> Creacion Usuarios</a></li>
+          </ul>
+        </li>
+
         <li class="treeview">
           <a href="#">
             <i class="fa fa-files-o"></i>

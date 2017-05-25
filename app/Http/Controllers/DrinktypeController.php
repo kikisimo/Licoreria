@@ -10,6 +10,10 @@ use Illuminate\Support\Facades\Redirect;
 
 class DrinktypeController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     //Parte Lucho CRUD
 
     public function index()
