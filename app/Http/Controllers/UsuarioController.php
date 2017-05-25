@@ -8,6 +8,11 @@ use App\person;
 
 class UsuarioController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     //metodo index
     public function index()
     {
@@ -23,6 +28,6 @@ class UsuarioController extends Controller
     }
     public function loadView()
     {
-        return view ('Login');
+        return view ('pruebarafa');
     }
 }

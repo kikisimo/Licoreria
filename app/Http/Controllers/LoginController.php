@@ -2,14 +2,21 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Auth\Middleware\Authenticate;
 use Illuminate\Http\Request;
 use Sentinel;
+uae Illuminate\Auth\Middleware\Authenticate;
 
 class LoginController extends Controller
 {
-    public function login()
+    public function __construct()
     {
-        return view ('authentication.login');
+        $this->middleware('auth');
+    }
+
+    public function prueba()
+    {
+        return view ('pruebarafa');
     }
     public function postLogin(Request $request)
     {

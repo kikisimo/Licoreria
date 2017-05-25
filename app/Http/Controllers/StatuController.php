@@ -6,5 +6,8 @@ use Illuminate\Http\Request;
 
 class StatuController extends Controller
 {
-    //
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 }

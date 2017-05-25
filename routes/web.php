@@ -17,12 +17,9 @@ Route::get('/', function () {
 Route::get('login', function () {
     return view('login');
 });
-Route::get('base1', function () {
-    //$sesion = Sesion::usuario('administrador')->first();
 
-    return view('base1')/*->with('sesion',$sesion->nombre)*/;
-});
-
+//toy cambiando, esto carlex
+Route::get('base1','PageController@base1');
 
 Route::get('sale','PageController@sale');
 
@@ -72,7 +69,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 //RUTAS RAFASEBASS
-Route::get('Login','UsuarioController@loadView');
+Route::get('pruebarafa','UsuarioController@loadView');
 
 Route::post('base','UsuarioController@verify');
 

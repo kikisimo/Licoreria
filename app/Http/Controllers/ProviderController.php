@@ -8,6 +8,10 @@ use Illuminate\Support\Facades\Redirect;
 use App\Http\Requests\ProviderRequest;
 class ProviderController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function create_providers()
     {
         return view ('providers.create_providers');
