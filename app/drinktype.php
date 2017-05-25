@@ -6,16 +6,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class drinktype extends Model
 {
-    protected $primaryKey = 'cod_dt';
+    //protected $primaryKey = 'cod_dt';
 
     protected $fillable = [
         'type', 'description',
     ];
- /*
+
     public function products()
     {
 
-        return $this -> hasMany('App\product');
+        return $this -> hasMany(Product::class);
     }
- */
+
 }
