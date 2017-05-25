@@ -17,7 +17,7 @@ class ProviderController extends Controller
         return view ('providers.create_providers');
     }
 
-    public function save(Request $request)
+    public function save(ProviderRequest $request)
     {
 
         $provider = new Provider();
