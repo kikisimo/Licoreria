@@ -10,6 +10,11 @@ class product extends Model
     protected $primaryKey = 'cod_prod';
 
 
+    protected $fillable = [
+        'name', 'brand','content','due_date',
+    ];
+
+/*
     public function categories()
     {
         return $this -> belongsTo('App\category','cod_cat');
@@ -38,5 +43,10 @@ class product extends Model
 
         return $this -> hasMany('App\purchase');
     }
-
+*/
+//Scope Wilde no tocar
+    public function scopeSearch($query, $name)
+    {
+        return $query->where('name', 'LIKE', "%$name");
+    }
 }

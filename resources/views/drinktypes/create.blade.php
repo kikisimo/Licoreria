@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('Layouts.base0')
 
 @section('content')
     <div class="col-sm-8">
@@ -13,7 +13,7 @@
 
         @include('drinktypes.fragment.form')
         {!! Form::close () !!}
-
+        <a href="/licoreria/public/base" class="btn btn-primary pull-right">Menu Principal</a>
     </div>
     <div class="col-sm-4">
 

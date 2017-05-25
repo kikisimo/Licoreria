@@ -1,3 +1,4 @@
+
 <?php
 /**
  * Created by PhpStorm.
@@ -5,7 +6,7 @@
  * Date: 5/3/2017
  * Time: 11:15 PM
  */
-@extends('layout')
+@extends('layout.base0')
 
 @section('content')
 
@@ -38,3 +39,6 @@ Productos
     </tbody>
     </table>
     </div>
+            </div><!-- /.box-header -->
+
+    </div><!-- /.content-wrapper -->

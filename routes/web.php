@@ -17,20 +17,31 @@ Route::get('/', function () {
 Route::get('login', function () {
     return view('login');
 });
+Route::get('base1', function () {
+    //$sesion = Sesion::usuario('administrador')->first();
+
+    return view('base1')/*->with('sesion',$sesion->nombre)*/;
+});
+
+
+Route::get('sale','PageController@sale');
+
+Route::get('layouts/base0','PageController@base0');
+
 Route::get('base', function () {
-    return view('base');
+    //$sesion = Sesion::usuario('administrador')->first();
+
+    return view('base')/*->with('sesion',$sesion->nombre)*/;
 });
 
 Route::get('catalogs','CatalogController@listAll');
 
-//CRUD Altas Productos Lucho
-Route::get('products','ProductController@listAll');
+//CRUD Productos Lucho
+/*Route::get('products','ProductController@listAll');
 Route::get('products/create_product','ProductController@create_product');
-
 Route::post('products/save','ProductController@save');
 Route::get('products/update','ProductController@update');
-Route::get('products/delete','ProductController@delete');
-Route::get('products/show','ProductController@show');
+Route::get('products/show','ProductController@show');*/
 
 //CRUD Proveedores
 Route::get('providers/create_providers','ProviderController@create_providers');
@@ -38,11 +49,11 @@ Route::post('providers/save','ProviderController@save');
 Route::get('providers/update','ProviderController@update');
 Route::get('providers/delete','ProviderController@delete');
 Route::get('providers/show','ProviderController@show');
-//CRUD CATEGORIAS Parte Lucho
+//CRUD CATEGORIAS de Productos Parte Lucho
 Route::resource('categories','CategoryController');
 Auth::routes();
 
-//CRUD Tipos de Bebida Parte Lucho
+//CRUD Tipos de productos Parte Lucho
 Route::resource('drinktypes','DrinktypeController');
 Auth::routes();
 

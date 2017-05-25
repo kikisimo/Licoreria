@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('Layouts.base0')
 
 @section('content')
     <div class="col-sm-8">
@@ -9,7 +9,7 @@
         <p>
             {{$drinktype->description}}
         </p>
-
+        <a href="{{ route('categories.index') }}" class="btn btn-primary pull-right">Listado</a>
     </div>
     <div class="col-sm-4">
 

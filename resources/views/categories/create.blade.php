@@ -13,7 +13,7 @@
 
         @include('categories.fragment.form')
         {!! Form::close () !!}
-
+        <a href="/licoreria/public/base" class="btn btn-primary pull-right">Menu Principal</a>
     </div>
     <div class="col-sm-4">
 

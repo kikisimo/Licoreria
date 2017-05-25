@@ -4,14 +4,16 @@
 </div>
 
 <div class="form-group">
-    {!!   Form::label ('short','Marca')!!}
+    {!!   Form::label ('brand','Marca')!!}
     {!! Form::text('brand',null, ['class' => 'form-control' ]) !!}
 </div>
 
 <div class="form-group">
-    {!!   Form::label ('short','Contenido neto')!!}
+    {!!   Form::label ('content','Contenido neto')!!}
     {!! Form::text('content',null, ['class' => 'form-control' ]) !!}
 </div>
+
+
 
 <div class="form-group">
     {!! Form::submit('Guardar', ['class' => 'btn btn-primary' ]) !!}

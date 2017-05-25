@@ -1,5 +1,4 @@
-<html>
-<body>
+
 <form action= "altas.php" method="post">
 
     <table width="314" border="0" align="center">
@@ -32,6 +31,6 @@
             <td><input type="text" name="prov" id="prov"></td>
         </tr>
     </table>
-</form>
-</body>
-</html>
+            </div><!-- /.box-header -->
+
+    </div><!-- /.content-wrapper -->
