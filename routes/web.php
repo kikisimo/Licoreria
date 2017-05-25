@@ -73,3 +73,10 @@ Route::post('/login','LoginController@postLogin');
 
 
 //TERMINA RUTAS RAFASEBASS
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
