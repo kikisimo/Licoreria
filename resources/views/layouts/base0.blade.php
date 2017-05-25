@@ -250,8 +250,8 @@
           </a>
           <ul class="treeview-menu">
             <li class="active"><a href="{{ url('products.create') }}"><i class="fa fa-circle-o"></i> Registro de Productos</a></li>
-            <li><a href="{{ url('products.bajas') }}"><i class="fa fa-circle-o"></i> Borrar Productos</a></li>
-            <li><a href="{{ url('products.edit') }}"><i class="fa fa-circle-o"></i> Actualizar Productos</a></li>
+            <li><a href="{{ url('products.bajas') }}"><i class="fa fa-circle-o"></i> Categorias</a></li>
+            <li><a href="{{ url('products.edit') }}"><i class="fa fa-circle-o"></i> Tipos</a></li>
             <li><a href="{{ url('products.listAll') }}"><i class="fa fa-circle-o"></i> Listado de Productos</a></li>
           </ul>
         </li>

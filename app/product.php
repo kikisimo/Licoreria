@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Http\Requests\DrinktypeRequest;
 use Illuminate\Database\Eloquent\Model;
 use App\purchase;
 
@@ -11,21 +12,21 @@ class product extends Model
 
 
     protected $fillable = [
-        'name', 'brand','content','due_date',
+        'name', 'brand','content','due_date', 'cod_cat', 'cod_dt',
     ];
 
+    //prueba Relaciones Lucho
+    public function category()
+    {
+        return $this -> belongsTo(Category::class, 'cod_cat');
+    }
+
+
+    public function drinktype()
+    {
+        return $this -> belongsTo(Drinktype::class, 'cot_dt');
+    }
 /*
-    public function categories()
-    {
-        return $this -> belongsTo('App\category','cod_cat');
-    }
-
-
-    public function drinktypes()
-    {
-        return $this -> belongsTo('App\drinktype','cot_dt');
-    }
-
     public function sale_products()
     {
 
