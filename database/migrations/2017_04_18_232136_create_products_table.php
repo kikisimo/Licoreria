@@ -21,7 +21,7 @@ class CreateProductsTable extends Migration
             $table->date('due_date');
             $table->integer('cod_cat')->unsigned();
             $table->foreign('cod_cat')->references('cod_cat')->on('categories');
-            $table->integer('cod_dt')->nullable()->unsigned();
+            $table->integer('cod_dt')->unsigned();
             $table->foreign('cod_dt')->references('cod_dt')->on('drinktypes');
             $table->timestamps();
         });

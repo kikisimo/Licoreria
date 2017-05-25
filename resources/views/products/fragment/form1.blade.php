@@ -29,5 +29,15 @@
 </div>
 
 <div class="form-group">
+    <label for="">Tipo</label>
+    <select name="cod_dt" id="inputcod_dt" class="form-control">
+        <option value="">--escoja el tipo de Producto--</option>
+        @foreach($drinktypes as $drinktype)
+            <option value="{{ $drinktype ['cod_dt'] }}">{{ $drinktype ['type']}}</option>
+        @endforeach
+    </select>
+</div>
+
+<div class="form-group">
     {!! Form::submit('Guardar', ['class' => 'btn btn-primary' ]) !!}
 </div>

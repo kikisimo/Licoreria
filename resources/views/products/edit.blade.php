@@ -11,7 +11,7 @@
 
         {!! Form::model($product, ['route' => ['products.update', $product->cod_prod], 'method' => 'put' ]) !!}
 
-        @include('products.fragment.form1')
+        @include('products.fragment.form')
 
         {!! Form::close () !!}
     </div>
