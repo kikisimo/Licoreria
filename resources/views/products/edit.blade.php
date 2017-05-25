@@ -1,4 +1,4 @@
-@extends('layout.base0')
+@extends('layout')
 
 @section('content')
     <div class="col-sm-8">
@@ -11,7 +11,7 @@
 
         {!! Form::model($product, ['route' => ['products.update', $product->cod_prod], 'method' => 'put' ]) !!}
 
-        @include('products.fragment.form')
+        @include('products.fragment.form1')
 
         {!! Form::close () !!}
     </div>

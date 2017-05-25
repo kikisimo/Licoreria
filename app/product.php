@@ -11,16 +11,16 @@ class product extends Model
 
 
     protected $fillable = [
-        'name', 'brand','content','due_date',
+        'name', 'brand','content','due_date', 'cod_cat',
     ];
 
-/*
-    public function categories()
+    //prueba Relaciones Lucho
+    public function category()
     {
-        return $this -> belongsTo('App\category','cod_cat');
+        return $this -> belongsTo(Category::class, 'cod_cat');
     }
 
-
+/*
     public function drinktypes()
     {
         return $this -> belongsTo('App\drinktype','cot_dt');

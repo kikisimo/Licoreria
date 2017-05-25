@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Product;
+use App\Category;
 use DB;
 use Illuminate\Support\Facades\Redirect;
 use App\Http\Requests\ProductRequest;
@@ -14,19 +15,23 @@ class ProductController extends Controller
 
     public function create()
     {
-        return view('products.create');
+        $categories = Category::all();
+        return view('products.create', compact('categories'));
     }
     //Parte Lucho
     public function store(ProductRequest $request)
     {
-        $product = new Product;
+      /*  $product = new Product;
 
         $product ->name = $request->name;
         $product ->brand = $request->brand;
         $product ->content = $request->content;
         $product ->due_date = $request->due_date;
+        $product ->cod_cat = $request->cot_cat;
 
-        $product ->save();
+        $product ->save();*/
+
+      Product::create($request->all());
 
         return redirect()->route('products.index')
 

@@ -1,4 +1,4 @@
-@extends('layout.base0')
+@extends('layout')
 
 @section('content')
     <div class="col-sm-8">
@@ -30,6 +30,7 @@
                     <th>Marca</th>
                     <th>Contenido</th>
                     <th>Fecha</th>
+                    <th>Categoria</th>
                     <th colspan="3">&nbsp;</th>
                 </tr>
             </thead>
@@ -41,6 +42,7 @@
                         <td> {{ $product->brand }}</td>
                         <td> {{ $product->content }}</td>
                         <td> {{ $product->due_date }}</td>
+                        <td> {{ $product->cod_cat }}</td>
                         <td> <a href="{{ route('products.edit', $product->cod_prod) }}" class="btn btn-primary pull-right"->Editar</a> </td>
                         <td>
                             <form action="{{ route('products.destroy', $product->cod_prod) }}" method="post">
