@@ -10,11 +10,11 @@
 </div>
 
 <div class="form-group">
-    {!!   Form::label ('short','Email')!!}
+    {!!   Form::label ('short','Correo')!!}
     {!! Form::text('e_mail',null, ['class' => 'form-control' ]) !!}
 </div>
 <div class="form-group">
-    {!!   Form::label ('short','Adress')!!}
+    {!!   Form::label ('short','Direccion')!!}
     {!! Form::text('address',null, ['class' => 'form-control' ]) !!}
 </div>
 

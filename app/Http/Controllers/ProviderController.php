@@ -12,12 +12,17 @@ class ProviderController extends Controller
     {
         $this->middleware('auth');
     }
-    public function create_providers()
+    public function create()
     {
-        return view ('providers.create_providers');
+        return view ('providers.create');
     }
 
-    public function save(ProviderRequest $request)
+    public function show()
+    {
+
+    }
+
+    public function store(ProviderRequest $request)
     {
 
         $provider = new Provider();
@@ -29,6 +34,11 @@ class ProviderController extends Controller
         $provider -> save();
         //$providers = provider::orderBy('cod_prov', 'DESC')->paginate();
         //return view('providers.index', compact('providers'));
+
+        return redirect()->route('providers.index')
+
+            ->with('info', 'el Proveedor fue Guardado');
+
     }
 
     //Parte Wilde

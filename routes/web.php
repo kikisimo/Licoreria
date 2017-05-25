@@ -41,11 +41,14 @@ Route::get('products/update','ProductController@update');
 Route::get('products/show','ProductController@show');*/
 
 //CRUD Proveedores
-Route::get('providers/create_providers','ProviderController@create_providers');
+Route::resource('priver','CategoryController');
+Auth::routes();
+
+/*Route::get('providers/create_providers','ProviderController@create_providers');
 Route::post('providers/save','ProviderController@save');
 Route::get('providers/update','ProviderController@update');
 Route::get('providers/delete','ProviderController@delete');
-Route::get('providers/show','ProviderController@show');
+Route::get('providers/show','ProviderController@show');*/
 //CRUD CATEGORIAS de Productos Parte Lucho
 Route::resource('categories','CategoryController');
 Auth::routes();
