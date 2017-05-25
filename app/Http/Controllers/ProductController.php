@@ -36,7 +36,7 @@ class ProductController extends Controller
         $product ->cod_cat = $request->cot_cat;
 
         $product ->save();*/
-      Product::create($request->all());
+        Product::create($request->all());
 
         return redirect()->route('products.index')
 
@@ -65,8 +65,9 @@ class ProductController extends Controller
     }
     public function edit($cod_prod)
     {
-        $drinktypes = Drinktype::all();
+
         $categories = Category::all();
+        $drinktypes = Drinktype::all();
         $product = Product::find($cod_prod);
         return view('products.edit', compact('product'), compact('categories'), compact('drinktypes'));
     }
@@ -80,7 +81,7 @@ class ProductController extends Controller
         $product ->brand = $request->brand;
         $product ->content = $request->content;
         $product ->due_date = $request->due_date;
-       // $product ->cod_cat = $request->cod_cat;
+        $product ->cod_cat = $request->cod_cat;
         //$product ->cod_dt = $request->cod_dt;
 
         $product ->save();

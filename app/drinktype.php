@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class drinktype extends Model
 {
-    //protected $primaryKey = 'cod_dt';
+    protected $primaryKey = 'cod_dt';
 
     protected $fillable = [
         'type', 'description',
