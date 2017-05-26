@@ -22,4 +22,8 @@ class PageController extends Controller
         return view ('base1');
     }
 
+    public function base()
+    {
+        return view ('base');
+    }
 }

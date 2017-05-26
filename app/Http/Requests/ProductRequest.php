@@ -28,6 +28,8 @@ class ProductRequest extends FormRequest
             'brand' => 'required',
             'content' => 'required',
             'due_date' => 'required',
+            'cod_cat' => 'required',
+            'cod_dt' => 'required',
         ];
     }
 }

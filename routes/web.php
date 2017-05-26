@@ -25,11 +25,9 @@ Route::get('sale','PageController@sale');
 
 Route::get('layouts/base0','PageController@base0');
 
-Route::get('base', function () {
-    //$sesion = Sesion::usuario('administrador')->first();
 
-    return view('base')/*->with('sesion',$sesion->nombre)*/;
-});
+Route::get('base','PageController@base');
+
 
 Route::get('catalogs','CatalogController@listAll');
 
