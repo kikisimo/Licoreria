@@ -1,4 +1,4 @@
-@extends('Layouts.base0')
+@extends('base')
 
 @section('title')
     Registro de Ventas
@@ -6,5 +6,7 @@
 @section('content')
 
     <h1>Colocar contenido aca</h1>
+
+
 
 @endsection

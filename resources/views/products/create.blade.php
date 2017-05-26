@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('base')
 
 @section('content')
     <div class="col-sm-8">
@@ -21,4 +21,6 @@
     </div>
 
 @endsection
+
+
 

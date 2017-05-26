@@ -1,5 +1,5 @@
 
-@extends('layout.base0')
+@extends('layout')
 
 @section('content')
     <h1>Registrar Nuevo Proveedor </h1>
