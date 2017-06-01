@@ -14,14 +14,14 @@
 </div>
 
 <div class="form-group">
-    {!!   Form::label ('due_date','Fecha de Ingreso del Producto')!!}
+    {!!   Form::label ('due_date','Fecha de ingreso del producto')!!}
     {!! Form::date('due_date',null, ['class' => 'form-control' ]) !!}
 </div>
 
 <div class="form-group">
-    <label for="">Categoria</label>
+    <label for="">Categoría</label>
     <select name="cod_cat" id="inputcod_cat" class="form-control">
-        <option value="">--escoja la categoria--</option>
+        <option value="">-Escoja la categoría--</option>
         @foreach($categories as $category)
             <option value="{{ $category ['cod_cat'] }}">{{ $category ['category']}}</option>
         @endforeach
@@ -31,7 +31,7 @@
 <div class="form-group">
     <label for="">Tipo</label>
     <select name="cod_dt" id="inputcod_dt" class="form-control">
-        <option value="">--escoja el tipo de Producto--</option>
+        <option value="">--Escoja el tipo de producto--</option>
         @foreach($drinktypes as $drinktype)
             <option value="{{ $drinktype ['cod_dt'] }}">{{ $drinktype ['type']}}</option>
         @endforeach

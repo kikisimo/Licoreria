@@ -5,7 +5,7 @@
 </div>
 
 <div class="form-group">
-    {!!   Form::label ('short','Telefono')!!}
+    {!!   Form::label ('short','Teléfono')!!}
     {!! Form::text('phone',null, ['class' => 'form-control' ]) !!}
 </div>
 
@@ -14,7 +14,7 @@
     {!! Form::text('e_mail',null, ['class' => 'form-control' ]) !!}
 </div>
 <div class="form-group">
-    {!!   Form::label ('short','Direccion')!!}
+    {!!   Form::label ('short','Dirección')!!}
     {!! Form::text('address',null, ['class' => 'form-control' ]) !!}
 </div>
 

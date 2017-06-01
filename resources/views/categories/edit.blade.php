@@ -3,7 +3,7 @@
 @section('content')
     <div class="col-sm-8">
        <h2>
-           Editar Categoria
+           Editar "Categoría"
            <a href="{{ route('categories.index') }}" class="btn btn-primary pull-right">Listado</a>
        </h2>
 

@@ -25,12 +25,12 @@
         <table class="table table-hover table-striped">
             <thead>
                 <tr>
-                    <th width="20px">Codigo</th>
+                    <th width="20px">Código</th>
                     <th>Nombre</th>
                     <th>Marca</th>
                     <th>Contenido</th>
                     <th>Fecha</th>
-                    <th>Categoria</th>
+                    <th>Categoría</th>
                     <th>Tipo</th>
                     <th colspan="3">&nbsp;</th>
                 </tr>
