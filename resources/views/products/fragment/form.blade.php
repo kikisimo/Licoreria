@@ -14,13 +14,13 @@
 </div>
 
 <div class="form-group">
-    {!!   Form::label ('due_date','Fecha de Ingreso del Producto')!!}
+    {!!   Form::label ('due_date','Fecha de ingreso del producto')!!}
     {!! Form::date('due_date',null, ['class' => 'form-control' ]) !!}
 </div>
 
 
 <div class="form-group">
-    <label for="">Categoria</label>
+    <label for="">Categoría</label>
     <select name="cod_cat" id="inputcod_cat" class="form-control">
         <option value="">--elija la nueva categoria--</option>
         @foreach($categories as $category)

@@ -1,9 +1,9 @@
-@extends('layout')
+@extends('base')
 
 @section('content')
     <div class="col-sm-8">
        <h2>
-           Nueva Categoria
+           Nueva "Categoría"
            <a href="{{ route('categories.index') }}" class="btn btn-primary pull-right">Listado</a>
        </h2>
 
@@ -13,7 +13,7 @@
 
         @include('categories.fragment.form')
         {!! Form::close () !!}
-        <a href="/licoreria/public/base" class="btn btn-primary pull-right">Menu Principal</a>
+        <a href="/licoreria/public/base" class="btn btn-primary pull-right">Menú Principal</a>
     </div>
     <div class="col-sm-4">
 

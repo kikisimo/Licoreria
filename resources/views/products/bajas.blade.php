@@ -6,7 +6,7 @@
  * Date: 5/3/2017
  * Time: 11:15 PM
  */
-@extends('layout.base0')
+@extends('base')
 
 @section('content')
 

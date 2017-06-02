@@ -1,19 +1,19 @@
-@extends('layout')
+@extends('base')
 
 @section('content')
     <div class="col-sm-8">
         <h2>
-            Proveedores
-            <a href="/licoreria/public/providers/create_providers" class="btn btn-primary pull-right"->Nuevo</a>
+            Listado de Proveedores
+            <a href="{{route('providers.create')}}" class="btn btn-primary pull-right"->Nuevo</a>
         </h2>
         @include('providers.fragment.info')
         <table class="table table-hover table-striped">
             <thead>
             <tr>
-                <th width="30px">Codigo</th>
+                <th width="30px">Código</th>
                 <th>Nombre</th>
-                <th>Telefono</th>
-                <th>Email</th>
+                <th>Teléfono</th>
+                <th>Correo</th>
                 <th>Dirección</th>
                 <th>Observaciones</th>
                 <th colspan="3">&nbsp;</th>

@@ -5,16 +5,16 @@
 </div>
 
 <div class="form-group">
-    {!!   Form::label ('short','Telefono')!!}
+    {!!   Form::label ('short','Teléfono')!!}
     {!! Form::text('phone',null, ['class' => 'form-control' ]) !!}
 </div>
 
 <div class="form-group">
-    {!!   Form::label ('short','Email')!!}
+    {!!   Form::label ('short','Correo')!!}
     {!! Form::text('e_mail',null, ['class' => 'form-control' ]) !!}
 </div>
 <div class="form-group">
-    {!!   Form::label ('short','Adress')!!}
+    {!!   Form::label ('short','Dirección')!!}
     {!! Form::text('address',null, ['class' => 'form-control' ]) !!}
 </div>
 

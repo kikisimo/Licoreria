@@ -1,9 +1,9 @@
-@extends('layout')
+@extends('base')
 
 @section('content')
     <div class="col-sm-8">
        <h2>
-           Editar Tipo de Bebida
+           Editar "Tipo de Bebida"
            <a href="{{ route('drinktypes.index') }}" class="btn btn-primary pull-right">Listado</a>
        </h2>
 

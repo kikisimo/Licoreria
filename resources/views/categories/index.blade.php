@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('base')
 
 @section('content')
     <div class="col-sm-8">
@@ -10,9 +10,9 @@
     <table class="table table-hover table-striped">
         <thead>
              <tr>
-                <th width="20px">Codigo</th>
-                <th>Categoria</th>
-                <th>Descripcion</th>
+                <th width="20px">Código</th>
+                <th>Categoría</th>
+                <th>Descripción</th>
                 <th colspan="3">&nbsp;</th>
             </tr>
         </thead>
@@ -25,17 +25,18 @@
 
                 <td>
                     <a href="{{route('categories.show',$category-> cod_cat)}}">
-                    <button class="btn btn-primary">ver</button></a>
+                    <button class="btn btn-primary">Ver</button></a>
                 </td>
+
                 <td>
                     <a href="{{route('categories.edit',$category->cod_cat )}}">
-                    <button class="btn btn-primary">editar</button></a>
+                    <button class="btn btn-primary">Editar</button></a>
                 </td>
                 <td>
                     <form action="{{ route('categories.destroy',$category->cod_cat) }}" method="post">
                         {{ csrf_field() }}
                         <input type="hidden" name="_method" value="delete">
-                        <button class="btn btn-primary">borrar</button>
+                        <button class="btn btn-primary">Eliminar</button>
                     </form>
                 </td>
             </tr>
