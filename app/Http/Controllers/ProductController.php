@@ -40,7 +40,7 @@ class ProductController extends Controller
 
         return redirect()->route('products.index')
 
-            ->with('info', 'el Producto fue Guardado');
+            ->with('info', 'El producto ha sido guardado correctamente');
 
 
     }
@@ -52,7 +52,7 @@ class ProductController extends Controller
     //Parte Wilde
     public function index(Request $request)
     {
-        $products = Product::search($request->name)->orderBy('cod_prod', 'DESC')->paginate(5);
+        $products = Product::search($request->name)->orderBy('cod_prod', 'DESC')->paginate(3);
         return view('products.index', compact('products'));
     }
 

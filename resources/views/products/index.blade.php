@@ -4,8 +4,10 @@
     <div class="col-sm-8">
         <hr>
             Productos
-            <a href="{{route('products.create')}}" class="btn btn-primary pull-right"->Nuevo</a>
-            <hr>
+            <!--<a href="{{route('products.create')}}" class="btn btn-primary pull-right"->Nuevo</a>-->
+
+        <a href="{{route('products.create')}}" class="btn btn-primary pull-right" target="_blank" onclick="window.open(this.href,this.target,'width=900,height=700,top=5,left=200,toolbar=no,location=no,status=no,menubar=no');return false;">Nuevo</a>
+        <hr>
 
 
         </h2>

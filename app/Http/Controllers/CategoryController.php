@@ -19,7 +19,7 @@ class CategoryController extends Controller
 
     public function index()
     {
-        $categories = Category::orderBy('cod_cat', 'DESC')->paginate();
+        $categories = Category::orderBy('cod_cat', 'DESC')->paginate(3);
         return view('categories.index', compact('categories'));
     }
 
@@ -44,7 +44,7 @@ class CategoryController extends Controller
 
         return redirect()->route('categories.index')
 
-            ->with('info', 'La Categoria fue Creado');
+            ->with('info', 'La categoría ha sido creada correctamente');
     }
     public function edit($cod_cat)
     {
@@ -63,13 +63,13 @@ class CategoryController extends Controller
 
         return redirect()->route('categories.index')
 
-                     ->with('info', 'La Categoria fue actualizada');
+                     ->with('info', 'La categoría ha sido actualizada correctamente');
     }
     public function destroy($cod_cat)
     {
         $category = Category::find($cod_cat);
         $category->delete();
 
-        return back()->with('info', 'La Categoria fue eliminada');
+        return back()->with('info', 'La categoría ha sido correctamente eliminada');
     }
 }

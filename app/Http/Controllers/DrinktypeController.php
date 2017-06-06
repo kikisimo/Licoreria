@@ -18,7 +18,7 @@ class DrinktypeController extends Controller
 
     public function index()
     {
-        $drinktypes = Drinktype::orderBy('cod_dt', 'DESC')->paginate();
+        $drinktypes = Drinktype::orderBy('cod_dt', 'DESC')->paginate(3);
         return view('drinktypes.index', compact('drinktypes'));
         //return 'index';
     }
@@ -40,7 +40,7 @@ class DrinktypeController extends Controller
 
         return redirect()->route('drinktypes.index')
 
-            ->with('info', 'el tipo de Bebida fue Creado');
+            ->with('info', 'El tipo de bebida ha sido creada correctamente');
     }
 
     public function update(CategoryRequest $request, $cod_dt)
@@ -54,7 +54,7 @@ class DrinktypeController extends Controller
 
         return redirect()->route('drinktypes.index')
 
-            ->with('info', 'El tipo de Bebida fue actualizado');
+            ->with('info', 'El tipo de bebida ha sido actualizada');
     }
 
     public function show($cod_dt)
@@ -68,7 +68,7 @@ class DrinktypeController extends Controller
         $drinktype = Drinktype::find($cod_dt);
         $drinktype->delete();
 
-        return back()->with('info', 'El Tipo de Bebida fue eliminado');
+        return back()->with('info', 'El tipo de bebida ha sido eliminada');
     }
 
     public function edit($cod_dt)

@@ -37,14 +37,14 @@ class ProviderController extends Controller
 
         return redirect()->route('providers.index')
 
-            ->with('info', 'el Proveedor fue Guardado');
+            ->with('info', 'El proovedor ha sido guardado correctamente');
 
     }
 
     //Parte Wilde
     public function index()
     {
-        $providers = Provider::orderBy('cod_prov', 'DESC')->paginate();
+        $providers = Provider::orderBy('cod_prov', 'DESC')->paginate(3);
         return view('providers.index', compact('providers'));
     }
 
