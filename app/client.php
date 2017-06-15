@@ -14,4 +14,8 @@ class client extends Model
 
         return $this -> hasMany('App\sale');
     }
+    public function scopeSearch($query, $nit)
+    {
+        return $query->where('nit', 'LIKE', "%$nit");
+    }
 }

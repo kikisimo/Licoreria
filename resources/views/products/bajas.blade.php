@@ -22,6 +22,8 @@ Productos
                     <th>Nombre</th>
                     <th>Marca</th>
                     <th>Contenido</th>
+                    <th>Stock</th>
+                    <th>Precio Unitario</th>
                     <th>Fecha</th>
                     <th colspan="3">&nbsp;</th>
                 </tr>
@@ -33,6 +35,8 @@ Productos
         <td> {{ $product->name }}</td>
         <td> {{ $product->brand }}</td>
         <td> {{ $product->content }}</td>
+        <td> {{ $product->stock }}</td>
+        <td> {{ $product->price }}</td>
         <td> {{ $product->due_date }}</td>
     </tr>
     @endforeach

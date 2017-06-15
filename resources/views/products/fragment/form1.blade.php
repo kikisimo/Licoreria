@@ -8,9 +8,21 @@
     {!! Form::text('brand',null, ['class' => 'form-control' ]) !!}
 </div>
 
+
+
 <div class="form-group">
     {!!   Form::label ('content','Contenido neto')!!}
     {!! Form::text('content',null, ['class' => 'form-control' ]) !!}
+</div>
+
+<div class="form-group">
+    {!!   Form::label ('stock','Stock')!!}
+    {!! Form::text('stock',null, ['class' => 'form-control' ]) !!}
+</div>
+
+<div class="form-group">
+    {!!   Form::label ('price','Precio Unitario')!!}
+    {!! Form::text('price',null, ['class' => 'form-control' ]) !!}
 </div>
 
 <div class="form-group">
