@@ -12,7 +12,7 @@ class product extends Model
 
 
     protected $fillable = [
-        'name', 'brand','content','due_date', 'cod_cat', 'cod_dt',
+        'name', 'brand','content','stock','price','due_date', 'cod_cat', 'cod_dt',
     ];
 
     //prueba Relaciones Lucho
@@ -24,7 +24,7 @@ class product extends Model
 
     public function drinktype()
     {
-        return $this -> belongsTo(Drinktype::class, 'cot_dt');
+        return $this -> belongsTo(Drinktype::class, 'cod_dt');
     }
 /*
     public function sale_products()

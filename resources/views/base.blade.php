@@ -266,6 +266,8 @@ desired effect
         <li class="active"><a href="{{ route('providers.index') }}"><i class="fa fa-link"></i> <span>Proveedores</span></a></li>
         <li class="active"><a href="{{ route('drinktypes.index') }}"><i class="fa fa-link"></i> <span>Tipos de bebida</span></a></li>
         <li class="active"><a href="{{ route('categories.index') }}"><i class="fa fa-link"></i> <span>Categorias</span></a></li>
+        <li class="active"><a href="{{ route('clients.index') }}"><i class="fa fa-link"></i> <span>Cliente</span></a></li>
+        <li class="active"><a href="{{ route('categories.index') }}"><i class="fa fa-link"></i> <span>Venta</span></a></li>
       </ul>
       <!-- /.sidebar-menu -->
     </section>
