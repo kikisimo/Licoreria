@@ -3,12 +3,25 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Symfony\Component\HttpKernel\Tests\ClientTest;
 
 class saleProduct extends Model
 {
     protected $primaryKey = 'cod_sale_product';
 
-    public function sales()
+    protected $fillable = [
+        'quantity', 'codigof','tax','discount','total','ci_client', 'cod_prod'
+        ,
+    ];
+
+
+    public function clients()
+    {
+        return $this -> belongsTo(Client::class, 'ci_client');
+    }
+
+
+    /*public function sales()
     {
         return $this -> belongsTo('App\sale','cod_sale');
     }
@@ -22,5 +35,5 @@ class saleProduct extends Model
     {
 
         return $this -> hasMany('App\billSale');
-    }
+    }*/
 }

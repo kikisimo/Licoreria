@@ -15,6 +15,8 @@ class product extends Model
         'name', 'brand','content','stock','price','due_date', 'cod_cat', 'cod_dt',
     ];
 
+
+
     //prueba Relaciones Lucho
     public function category()
     {
