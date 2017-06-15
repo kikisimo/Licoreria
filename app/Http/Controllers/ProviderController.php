@@ -26,6 +26,7 @@ class ProviderController extends Controller
     {
 
         $provider = new Provider();
+        =strtoupper ($request)
         $provider -> name = $request ->input('name');
         $provider -> phone = $request ->input('phone');
         $provider -> e_mail = $request ->input('e_mail');
