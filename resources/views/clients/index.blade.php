@@ -17,7 +17,7 @@
         <div class="input-group">
             {!! Form::text('nit', null, ['class' => 'form control', 'placeholder' => 'Buscar', 'aria-describedby' => 'search']) !!}
             <span class="input-group-addon" id="search"><span class="glyphonicon glyphicon-search" aria-hidden="true", ></span></span>
-        </div>
+        </div>g
         <br>
         <a href="{{route('clients.index')}}" class="btn btn-success"->Volver</a>
     {!! Form::close() !!}

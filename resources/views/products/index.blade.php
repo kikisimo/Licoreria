@@ -31,6 +31,8 @@
                     <th>Nombre</th>
                     <th>Marca</th>
                     <th>Contenido</th>
+                    <th>Stock</th>
+                    <th>Precio Unitario</th>
                     <th>Fecha</th>
                     <th>Categoría</th>
                     <th>Tipo</th>
@@ -44,8 +46,10 @@
                         <td> <strong>{{ $product->name }}</strong></td>
                         <td> {{ $product->brand }}</td>
                         <td> {{ $product->content }}</td>
+                        <td> {{ $product->stock }}</td>
+                        <td> {{ $product->price }}</td>
                         <td> {{ $product->due_date }}</td>
-                        <td> {{ $product->cod_cat }}</td>
+                        <td> {{ $product->cod_cat}}</td>
                         <td> {{ $product->cod_dt }}</td>
                         <td> <a href="{{ route('products.edit', $product->cod_prod) }}" class="btn btn-primary pull-right"->Editar</a> </td>
                         <td>
