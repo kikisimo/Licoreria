@@ -45,6 +45,8 @@
     </table>
         <center>{!! $drinktypes->render()!!}</center>
         <a href="/licoreria/public/base" class="btn btn-primary pull-right">Menú Principal</a>
+
+
     </div>
     <div class="col-sm-4">
 
