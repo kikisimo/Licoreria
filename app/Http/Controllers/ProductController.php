@@ -27,16 +27,20 @@ class ProductController extends Controller
     //Parte Lucho
     public function store(ProductRequest $request)
     {
-      /*  $product = new Product;
 
-        $product ->name = $request->name;
+        $product = new Product;
+
+        $product ->name = $request->input('name');
         $product ->brand = $request->brand;
         $product ->content = $request->content;
+        $product ->stock = $request->stock;
+        $product ->price = $request->price;
         $product ->due_date = $request->due_date;
-        $product ->cod_cat = $request->cot_cat;
+        $product ->cod_cat = $request->cod_cat;
+        $product ->cod_dt = $request->cod_dt;
 
-        $product ->save();*/
-        Product::create($request->all());
+        $product ->save();
+        //Product::create($request->all());
 
         return redirect()->route('products.index')
 
@@ -80,6 +84,8 @@ class ProductController extends Controller
         $product ->name = $request->name;
         $product ->brand = $request->brand;
         $product ->content = $request->content;
+        $product ->stock = $request->stock;
+        $product ->price = $request->price;
         $product ->due_date = $request->due_date;
         $product ->cod_cat = $request->cod_cat;
         //$product ->cod_dt = $request->cod_dt;

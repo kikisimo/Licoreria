@@ -18,6 +18,8 @@ class CreateProductsTable extends Migration
             $table->string('name');
             $table->string('brand');
             $table->string('content');
+            $table->integer('stock');
+            $table->integer('price');
             $table->date('due_date');
             $table->integer('cod_cat')->unsigned();
             $table->foreign('cod_cat')->references('cod_cat')->on('categories');

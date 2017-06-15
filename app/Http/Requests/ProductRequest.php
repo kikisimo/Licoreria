@@ -27,6 +27,8 @@ class ProductRequest extends FormRequest
             'name' => 'required',
             'brand' => 'required',
             'content' => 'required',
+            'stock' => 'required',
+            'price' => 'required',
             'due_date' => 'required',
             'cod_cat' => 'required',
             'cod_dt' => 'required',
