@@ -27,6 +27,6 @@
         </form>
 </div>
         </body>
-        <a href="/licoreria/public/base" class="btn btn-primary pull-right"->Pagina Principal</a>
+        <a href="#" class="btn btn-primary pull-right" onclick = "self.close()">Menú Principal</a>
     </div>
 @endsection

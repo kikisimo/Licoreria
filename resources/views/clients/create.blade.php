@@ -13,7 +13,7 @@
 
         @include('clients.fragment.form1')
         {!! Form::close () !!}
-        <a href="/licoreria/public/base" class="btn btn-primary pull-right">Menú Principal</a>
+        <a href="#" class="btn btn-primary pull-right" onclick = "self.close()">Menú Principal</a>
     </div>
 
     <div class="col-sm-4">

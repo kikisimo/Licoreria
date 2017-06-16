@@ -36,6 +36,7 @@ class ProviderController extends Controller
         //$providers = provider::orderBy('cod_prov', 'DESC')->paginate();
         //return view('providers.index', compact('providers'));
 
+
         return redirect()->route('providers.index')
 
             ->with('info', 'El proovedor ha sido guardado correctamente');
