@@ -91,3 +91,8 @@ Route::get('/homeprueba', 'HomeController@prueba')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+Route::get('pdf', 'PdfController@invoice');
+
